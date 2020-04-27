@@ -15,6 +15,18 @@
 		CCAD66A6245489E200E5D141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66A4245489E200E5D141 /* LaunchScreen.storyboard */; };
 		CCAD66B1245489E200E5D141 /* JLConsoleLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66B0245489E200E5D141 /* JLConsoleLogTests.swift */; };
 		CCAD66BC245489E200E5D141 /* JLConsoleLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66BB245489E200E5D141 /* JLConsoleLogUITests.swift */; };
+		CCAD66CB24548A5200E5D141 /* JLConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66CA24548A5200E5D141 /* JLConsoleLog.swift */; };
+		CCAD66CD24553DD200E5D141 /* JLConsoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66CC24553DD200E5D141 /* JLConsoleController.swift */; };
+		CCAD66CF24553F5600E5D141 /* JLConsoleLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66CE24553F5600E5D141 /* JLConsoleLogManager.swift */; };
+		CCAD66D1245542C500E5D141 /* JLConsoleLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66D0245542C500E5D141 /* JLConsoleLogModel.swift */; };
+		CCAD66D32455548500E5D141 /* DispatchMainSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66D22455548500E5D141 /* DispatchMainSafe.swift */; };
+		CCAD66D52455944C00E5D141 /* JLConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66D42455944C00E5D141 /* JLConsoleViewController.swift */; };
+		CCAD66D72455955000E5D141 /* JLConsoleOptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66D62455955000E5D141 /* JLConsoleOptionalView.swift */; };
+		CCAD66D92455957D00E5D141 /* JLConsoleCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66D82455957D00E5D141 /* JLConsoleCanvasView.swift */; };
+		CCAD66DB2455C3C300E5D141 /* JLConsoleLogTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66DA2455C3C300E5D141 /* JLConsoleLogTableView.swift */; };
+		CCAD66DD2455D98900E5D141 /* JLConsoleLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66DC2455D98900E5D141 /* JLConsoleLogDetailViewController.swift */; };
+		CCAD66DF2455E7D600E5D141 /* JLConsoleFloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66DE2455E7D600E5D141 /* JLConsoleFloatingViewController.swift */; };
+		CCAD66E12455E8AE00E5D141 /* JLConsoleFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66E02455E8AE00E5D141 /* JLConsoleFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,18 @@
 		CCAD66B7245489E200E5D141 /* JLConsoleLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLConsoleLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66BB245489E200E5D141 /* JLConsoleLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogUITests.swift; sourceTree = "<group>"; };
 		CCAD66BD245489E200E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAD66CA24548A5200E5D141 /* JLConsoleLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLog.swift; sourceTree = "<group>"; };
+		CCAD66CC24553DD200E5D141 /* JLConsoleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleController.swift; sourceTree = "<group>"; };
+		CCAD66CE24553F5600E5D141 /* JLConsoleLogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogManager.swift; sourceTree = "<group>"; };
+		CCAD66D0245542C500E5D141 /* JLConsoleLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogModel.swift; sourceTree = "<group>"; };
+		CCAD66D22455548500E5D141 /* DispatchMainSafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchMainSafe.swift; sourceTree = "<group>"; };
+		CCAD66D42455944C00E5D141 /* JLConsoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleViewController.swift; sourceTree = "<group>"; };
+		CCAD66D62455955000E5D141 /* JLConsoleOptionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleOptionalView.swift; sourceTree = "<group>"; };
+		CCAD66D82455957D00E5D141 /* JLConsoleCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleCanvasView.swift; sourceTree = "<group>"; };
+		CCAD66DA2455C3C300E5D141 /* JLConsoleLogTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogTableView.swift; sourceTree = "<group>"; };
+		CCAD66DC2455D98900E5D141 /* JLConsoleLogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogDetailViewController.swift; sourceTree = "<group>"; };
+		CCAD66DE2455E7D600E5D141 /* JLConsoleFloatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleFloatingViewController.swift; sourceTree = "<group>"; };
+		CCAD66E02455E8AE00E5D141 /* JLConsoleFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +123,7 @@
 		CCAD6698245489E000E5D141 /* JLConsoleLog */ = {
 			isa = PBXGroup;
 			children = (
+				CCAD66C924548A0500E5D141 /* JLConsoleLog */,
 				CCAD6699245489E000E5D141 /* AppDelegate.swift */,
 				CCAD669B245489E000E5D141 /* SceneDelegate.swift */,
 				CCAD669D245489E000E5D141 /* ViewController.swift */,
@@ -126,6 +151,25 @@
 				CCAD66BD245489E200E5D141 /* Info.plist */,
 			);
 			path = JLConsoleLogUITests;
+			sourceTree = "<group>";
+		};
+		CCAD66C924548A0500E5D141 /* JLConsoleLog */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD66CA24548A5200E5D141 /* JLConsoleLog.swift */,
+				CCAD66CC24553DD200E5D141 /* JLConsoleController.swift */,
+				CCAD66CE24553F5600E5D141 /* JLConsoleLogManager.swift */,
+				CCAD66D0245542C500E5D141 /* JLConsoleLogModel.swift */,
+				CCAD66D22455548500E5D141 /* DispatchMainSafe.swift */,
+				CCAD66D42455944C00E5D141 /* JLConsoleViewController.swift */,
+				CCAD66D62455955000E5D141 /* JLConsoleOptionalView.swift */,
+				CCAD66D82455957D00E5D141 /* JLConsoleCanvasView.swift */,
+				CCAD66DA2455C3C300E5D141 /* JLConsoleLogTableView.swift */,
+				CCAD66DC2455D98900E5D141 /* JLConsoleLogDetailViewController.swift */,
+				CCAD66DE2455E7D600E5D141 /* JLConsoleFloatingViewController.swift */,
+				CCAD66E02455E8AE00E5D141 /* JLConsoleFilterViewController.swift */,
+			);
+			path = JLConsoleLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCAD66D72455955000E5D141 /* JLConsoleOptionalView.swift in Sources */,
+				CCAD66E12455E8AE00E5D141 /* JLConsoleFilterViewController.swift in Sources */,
+				CCAD66D1245542C500E5D141 /* JLConsoleLogModel.swift in Sources */,
+				CCAD66CF24553F5600E5D141 /* JLConsoleLogManager.swift in Sources */,
+				CCAD66CB24548A5200E5D141 /* JLConsoleLog.swift in Sources */,
+				CCAD66CD24553DD200E5D141 /* JLConsoleController.swift in Sources */,
+				CCAD66DD2455D98900E5D141 /* JLConsoleLogDetailViewController.swift in Sources */,
 				CCAD669E245489E000E5D141 /* ViewController.swift in Sources */,
+				CCAD66D32455548500E5D141 /* DispatchMainSafe.swift in Sources */,
+				CCAD66D92455957D00E5D141 /* JLConsoleCanvasView.swift in Sources */,
+				CCAD66DB2455C3C300E5D141 /* JLConsoleLogTableView.swift in Sources */,
 				CCAD669A245489E000E5D141 /* AppDelegate.swift in Sources */,
+				CCAD66D52455944C00E5D141 /* JLConsoleViewController.swift in Sources */,
+				CCAD66DF2455E7D600E5D141 /* JLConsoleFloatingViewController.swift in Sources */,
 				CCAD669C245489E000E5D141 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B22726TNGH;
 				INFOPLIST_FILE = JLConsoleLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B22726TNGH;
 				INFOPLIST_FILE = JLConsoleLog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
