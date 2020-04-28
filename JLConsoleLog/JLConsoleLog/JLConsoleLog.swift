@@ -9,10 +9,10 @@
 import Foundation
 import os.log
 
-typealias JLConsoleLogCategory = String
+public typealias JLConsoleLogCategory = String
 
 
-enum JLConsoleLogLevel: String {
+public enum JLConsoleLogLevel: String {
     case Verbose = "🍔VERBOSE🐌"
     case Debug = "🔍DEBUG🐞"
     case Info = "📔INFO🦄"
@@ -20,14 +20,14 @@ enum JLConsoleLogLevel: String {
     case Error = "⚡️ERROR🙈"
 }
 
-struct JLLogOptions {
-    let level: JLConsoleLogLevel
-    let category: String
-    let contextData: Dictionary<String, Any>
-    let info: String
+public struct JLLogOptions {
+    public let level: JLConsoleLogLevel
+    public let category: JLConsoleLogCategory
+    public let contextData: Dictionary<String, Any>
+    public let info: String
 }
 
-func JLLog(options:JLLogOptions) {
+public func JLLog(options:JLLogOptions) {
     JLConsoleController.shared.logManager.append(log: JLConsoleLogModel(options: options))
 }
 
@@ -69,30 +69,30 @@ private func _JLLevelLog(level:JLConsoleLogLevel, category:JLConsoleLogCategory,
     }
 }
 
-func JLLevelLog(level: JLConsoleLogLevel, category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+public func JLLevelLog(level: JLConsoleLogLevel, category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
     _JLLevelLog(level: level, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
 
-func JLInfoLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+public func JLInfoLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
     _JLLevelLog(level: .Info, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
  
-func JLVerboseLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+public func JLVerboseLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
     _JLLevelLog(level: .Verbose, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
 
-func JLWarningLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+public func JLWarningLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
     _JLLevelLog(level: .Warning, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
 
-func JLErrorLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+public func JLErrorLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
     _JLLevelLog(level: .Error, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
 
-func JLDebugLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+public func JLDebugLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
     _JLLevelLog(level: .Debug, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
 
-func JLRegister(newCategory:JLConsoleLogCategory) {
+public func JLRegister(newCategory:JLConsoleLogCategory) {
     JLConsoleController.shared.register(newCategory: newCategory)
 }

@@ -1,0 +1,16 @@
+PODS:
+  - JLConsoleLog (1.0.0)
+
+DEPENDENCIES:
+  - JLConsoleLog (from `../JLConsoleLog`)
+
+EXTERNAL SOURCES:
+  JLConsoleLog:
+    :path: "../JLConsoleLog"
+
+SPEC CHECKSUMS:
+  JLConsoleLog: 14864c1681164f9bafcfcf30f0576e84937717b9
+
+PODFILE CHECKSUM: 8aaf97687c1fc800b0f6ef0dfab334e65894dc38
+
+COCOAPODS: 1.9.1

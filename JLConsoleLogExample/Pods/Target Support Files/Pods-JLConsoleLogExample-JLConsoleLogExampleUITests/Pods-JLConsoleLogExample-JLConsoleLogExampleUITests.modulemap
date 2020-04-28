@@ -1,0 +1,6 @@
+framework module Pods_JLConsoleLogExample_JLConsoleLogExampleUITests {
+  umbrella header "Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

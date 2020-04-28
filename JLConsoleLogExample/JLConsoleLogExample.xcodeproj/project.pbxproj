@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		571DC98B2B08DB994D1E2ABD /* Pods_JLConsoleLogExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */; };
+		8A8EE5FEB4A231BEF3DAA744 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A609D04FFAB3870D562844 /* Pods_JLConsoleLogExampleTests.framework */; };
+		CCAD66F12457E34100E5D141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66F02457E34100E5D141 /* AppDelegate.swift */; };
+		CCAD66F32457E34100E5D141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66F22457E34100E5D141 /* SceneDelegate.swift */; };
+		CCAD66F52457E34100E5D141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66F42457E34100E5D141 /* ViewController.swift */; };
+		CCAD66F82457E34200E5D141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66F62457E34200E5D141 /* Main.storyboard */; };
+		CCAD66FA2457E34300E5D141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66F92457E34300E5D141 /* Assets.xcassets */; };
+		CCAD66FD2457E34300E5D141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66FB2457E34300E5D141 /* LaunchScreen.storyboard */; };
+		CCAD67082457E34400E5D141 /* JLConsoleLogExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */; };
+		CCAD67132457E34400E5D141 /* JLConsoleLogExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */; };
+		CCAD675D2457E94800E5D141 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */; };
+		D719AEB881F80EFC9AF24E49 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C228327A24F799425A995259 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCAD67042457E34400E5D141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCAD66E52457E34100E5D141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCAD66EC2457E34100E5D141;
+			remoteInfo = JLConsoleLogExample;
+		};
+		CCAD670F2457E34400E5D141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCAD66E52457E34100E5D141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCAD66EC2457E34100E5D141;
+			remoteInfo = JLConsoleLogExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18A609D04FFAB3870D562844 /* Pods_JLConsoleLogExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		277A8E957DC7FC2F9CC0F6E9 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.release.xcconfig"; sourceTree = "<group>"; };
+		3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.debug.xcconfig"; sourceTree = "<group>"; };
+		5CCFE342FBE6BFF6B50F9F74 /* Pods-JLConsoleLogExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C5A583C360E2AF34FA6C68 /* Pods-JLConsoleLogExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C228327A24F799425A995259 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLConsoleLogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAD66F02457E34100E5D141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCAD66F22457E34100E5D141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CCAD66F42457E34100E5D141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCAD66F72457E34200E5D141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCAD66F92457E34300E5D141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCAD66FC2457E34300E5D141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCAD66FE2457E34300E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAD67032457E34400E5D141 /* JLConsoleLogExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLConsoleLogExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogExampleTests.swift; sourceTree = "<group>"; };
+		CCAD67092457E34400E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAD670E2457E34400E5D141 /* JLConsoleLogExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLConsoleLogExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogExampleUITests.swift; sourceTree = "<group>"; };
+		CCAD67142457E34400E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		F2ECC39E267DA3AA38A80A97 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCAD66EA2457E34100E5D141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571DC98B2B08DB994D1E2ABD /* Pods_JLConsoleLogExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAD67002457E34400E5D141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A8EE5FEB4A231BEF3DAA744 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAD670B2457E34400E5D141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D719AEB881F80EFC9AF24E49 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BC7AC84FCE661915FA9DB11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */,
+				C228327A24F799425A995259 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework */,
+				18A609D04FFAB3870D562844 /* Pods_JLConsoleLogExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		329F99CCD5ECBE0920A37C28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */,
+				317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */,
+				F2ECC39E267DA3AA38A80A97 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig */,
+				277A8E957DC7FC2F9CC0F6E9 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig */,
+				A9C5A583C360E2AF34FA6C68 /* Pods-JLConsoleLogExampleTests.debug.xcconfig */,
+				5CCFE342FBE6BFF6B50F9F74 /* Pods-JLConsoleLogExampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCAD66E42457E34100E5D141 = {
+			isa = PBXGroup;
+			children = (
+				CCAD66EF2457E34100E5D141 /* JLConsoleLogExample */,
+				CCAD67062457E34400E5D141 /* JLConsoleLogExampleTests */,
+				CCAD67112457E34400E5D141 /* JLConsoleLogExampleUITests */,
+				CCAD66EE2457E34100E5D141 /* Products */,
+				329F99CCD5ECBE0920A37C28 /* Pods */,
+				1BC7AC84FCE661915FA9DB11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCAD66EE2457E34100E5D141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */,
+				CCAD67032457E34400E5D141 /* JLConsoleLogExampleTests.xctest */,
+				CCAD670E2457E34400E5D141 /* JLConsoleLogExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCAD66EF2457E34100E5D141 /* JLConsoleLogExample */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD66F02457E34100E5D141 /* AppDelegate.swift */,
+				CCAD66F22457E34100E5D141 /* SceneDelegate.swift */,
+				CCAD66F42457E34100E5D141 /* ViewController.swift */,
+				CCAD66F62457E34200E5D141 /* Main.storyboard */,
+				CCAD66F92457E34300E5D141 /* Assets.xcassets */,
+				CCAD66FB2457E34300E5D141 /* LaunchScreen.storyboard */,
+				CCAD66FE2457E34300E5D141 /* Info.plist */,
+				CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */,
+			);
+			path = JLConsoleLogExample;
+			sourceTree = "<group>";
+		};
+		CCAD67062457E34400E5D141 /* JLConsoleLogExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */,
+				CCAD67092457E34400E5D141 /* Info.plist */,
+			);
+			path = JLConsoleLogExampleTests;
+			sourceTree = "<group>";
+		};
+		CCAD67112457E34400E5D141 /* JLConsoleLogExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */,
+				CCAD67142457E34400E5D141 /* Info.plist */,
+			);
+			path = JLConsoleLogExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCAD67172457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExample" */;
+			buildPhases = (
+				C6C57A241E2A46A6A0A2FC64 /* [CP] Check Pods Manifest.lock */,
+				CCAD66E92457E34100E5D141 /* Sources */,
+				CCAD66EA2457E34100E5D141 /* Frameworks */,
+				CCAD66EB2457E34100E5D141 /* Resources */,
+				67927C44C5EFF44CC7C7E8B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLConsoleLogExample;
+			productName = JLConsoleLogExample;
+			productReference = CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCAD67022457E34400E5D141 /* JLConsoleLogExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCAD671A2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleTests" */;
+			buildPhases = (
+				8E67B7DF0E3279A91E68C5B3 /* [CP] Check Pods Manifest.lock */,
+				CCAD66FF2457E34400E5D141 /* Sources */,
+				CCAD67002457E34400E5D141 /* Frameworks */,
+				CCAD67012457E34400E5D141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCAD67052457E34400E5D141 /* PBXTargetDependency */,
+			);
+			name = JLConsoleLogExampleTests;
+			productName = JLConsoleLogExampleTests;
+			productReference = CCAD67032457E34400E5D141 /* JLConsoleLogExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCAD670D2457E34400E5D141 /* JLConsoleLogExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCAD671D2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleUITests" */;
+			buildPhases = (
+				29BC9D9F96DAED20660F782B /* [CP] Check Pods Manifest.lock */,
+				CCAD670A2457E34400E5D141 /* Sources */,
+				CCAD670B2457E34400E5D141 /* Frameworks */,
+				CCAD670C2457E34400E5D141 /* Resources */,
+				A540FCE683766E638EE48BF4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCAD67102457E34400E5D141 /* PBXTargetDependency */,
+			);
+			name = JLConsoleLogExampleUITests;
+			productName = JLConsoleLogExampleUITests;
+			productReference = CCAD670E2457E34400E5D141 /* JLConsoleLogExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCAD66E52457E34100E5D141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = jack;
+				TargetAttributes = {
+					CCAD66EC2457E34100E5D141 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					CCAD67022457E34400E5D141 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = CCAD66EC2457E34100E5D141;
+					};
+					CCAD670D2457E34400E5D141 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = CCAD66EC2457E34100E5D141;
+					};
+				};
+			};
+			buildConfigurationList = CCAD66E82457E34100E5D141 /* Build configuration list for PBXProject "JLConsoleLogExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCAD66E42457E34100E5D141;
+			productRefGroup = CCAD66EE2457E34100E5D141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */,
+				CCAD67022457E34400E5D141 /* JLConsoleLogExampleTests */,
+				CCAD670D2457E34400E5D141 /* JLConsoleLogExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCAD66EB2457E34100E5D141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAD66FD2457E34300E5D141 /* LaunchScreen.storyboard in Resources */,
+				CCAD66FA2457E34300E5D141 /* Assets.xcassets in Resources */,
+				CCAD66F82457E34200E5D141 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAD67012457E34400E5D141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAD670C2457E34400E5D141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29BC9D9F96DAED20660F782B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67927C44C5EFF44CC7C7E8B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E67B7DF0E3279A91E68C5B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A540FCE683766E638EE48BF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C57A241E2A46A6A0A2FC64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCAD66E92457E34100E5D141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAD66F52457E34100E5D141 /* ViewController.swift in Sources */,
+				CCAD66F12457E34100E5D141 /* AppDelegate.swift in Sources */,
+				CCAD66F32457E34100E5D141 /* SceneDelegate.swift in Sources */,
+				CCAD675D2457E94800E5D141 /* SecondaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAD66FF2457E34400E5D141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAD67082457E34400E5D141 /* JLConsoleLogExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCAD670A2457E34400E5D141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCAD67132457E34400E5D141 /* JLConsoleLogExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCAD67052457E34400E5D141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */;
+			targetProxy = CCAD67042457E34400E5D141 /* PBXContainerItemProxy */;
+		};
+		CCAD67102457E34400E5D141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */;
+			targetProxy = CCAD670F2457E34400E5D141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCAD66F62457E34200E5D141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAD66F72457E34200E5D141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCAD66FB2457E34300E5D141 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCAD66FC2457E34300E5D141 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCAD67152457E34400E5D141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCAD67162457E34400E5D141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCAD67182457E34400E5D141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22726TNGH;
+				INFOPLIST_FILE = JLConsoleLogExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCAD67192457E34400E5D141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22726TNGH;
+				INFOPLIST_FILE = JLConsoleLogExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCAD671B2457E34400E5D141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C5A583C360E2AF34FA6C68 /* Pods-JLConsoleLogExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22726TNGH;
+				INFOPLIST_FILE = JLConsoleLogExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLConsoleLogExample.app/JLConsoleLogExample";
+			};
+			name = Debug;
+		};
+		CCAD671C2457E34400E5D141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CCFE342FBE6BFF6B50F9F74 /* Pods-JLConsoleLogExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22726TNGH;
+				INFOPLIST_FILE = JLConsoleLogExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLConsoleLogExample.app/JLConsoleLogExample";
+			};
+			name = Release;
+		};
+		CCAD671E2457E34400E5D141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2ECC39E267DA3AA38A80A97 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22726TNGH;
+				INFOPLIST_FILE = JLConsoleLogExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JLConsoleLogExample;
+			};
+			name = Debug;
+		};
+		CCAD671F2457E34400E5D141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277A8E957DC7FC2F9CC0F6E9 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B22726TNGH;
+				INFOPLIST_FILE = JLConsoleLogExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JLConsoleLogExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCAD66E82457E34100E5D141 /* Build configuration list for PBXProject "JLConsoleLogExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAD67152457E34400E5D141 /* Debug */,
+				CCAD67162457E34400E5D141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCAD67172457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAD67182457E34400E5D141 /* Debug */,
+				CCAD67192457E34400E5D141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCAD671A2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAD671B2457E34400E5D141 /* Debug */,
+				CCAD671C2457E34400E5D141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCAD671D2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAD671E2457E34400E5D141 /* Debug */,
+				CCAD671F2457E34400E5D141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCAD66E52457E34100E5D141 /* Project object */;
+}

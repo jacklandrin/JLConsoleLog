@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'JLConsoleLogExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'JLConsoleLog', :path =>'../JLConsoleLog'
+  # Pods for JLConsoleLogExample
+
+  target 'JLConsoleLogExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'JLConsoleLogExampleUITests' do
+    # Pods for testing
+  end
+
+end

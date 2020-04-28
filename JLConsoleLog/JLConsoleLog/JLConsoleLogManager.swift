@@ -14,9 +14,9 @@ let FilterSettingChangeNotification = NSNotification.Name(rawValue:"FilterSettin
 let WarningCountChangeNotification = NSNotification.Name(rawValue: "WarningCountChangeNotification")
 let ErrorCountChangeNotification = NSNotification.Name(rawValue: "ErrorCountChangeNotification")
 
-class JLConsoleLogManager: NSObject {
+public class JLConsoleLogManager: NSObject {
     // MARK: - static property
-    static let consoleLogNotificationCenter = NotificationCenter()
+    public static let consoleLogNotificationCenter = NotificationCenter()
     
     // MARK: - public property
     public var filterLevels: Set<JLConsoleLogLevel> = []
@@ -53,9 +53,9 @@ class JLConsoleLogManager: NSObject {
         }
     }
     
-    public internal(set) var allLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
-    public internal(set) var filteredLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
-    public internal(set) var warningCount: UInt = 0
+    var allLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
+    var filteredLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
+    var warningCount: UInt = 0
     {
         didSet{
             self.notifyWarningChange()
@@ -71,7 +71,7 @@ class JLConsoleLogManager: NSObject {
     // MARK: - private property
     private var pendingFilteredLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
     // MARK: - public functions
-    public func append(log:JLConsoleLogModel) {
+    func append(log:JLConsoleLogModel) {
         guard self.logEnable && log.info.count > 0 else {
             return
         }

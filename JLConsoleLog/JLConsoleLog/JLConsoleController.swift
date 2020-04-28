@@ -8,18 +8,18 @@
 
 import UIKit
 
-let ConsoleHasDismissedNotification = NSNotification.Name(rawValue:"ConsoleHasDismissedNotification")
+public let ConsoleHasDismissedNotification = NSNotification.Name(rawValue:"ConsoleHasDismissedNotification")
 
-enum ConsolePresentationStyle:Int {
+public enum ConsolePresentationStyle:Int {
     case Hidden = 0
     case FullScreen
     case Floating
 }
 
-class JLConsoleController: NSObject, OptionalViewDelegate {
+public class JLConsoleController: NSObject, OptionalViewDelegate {
     
     // MARK: - shared instance
-    static let shared = JLConsoleController()
+    public static let shared = JLConsoleController()
     
     // MARK: - public property
     public var style: ConsolePresentationStyle = .Hidden
@@ -150,11 +150,7 @@ class JLConsoleController: NSObject, OptionalViewDelegate {
         alertController.addAction(levelFilterAction)
         alertController.addAction(cleanAllLogAction)
         
-//        if self.style == .Floating {
-//            self.floatingViewController.present(alertController, animated: true, completion: nil)
-//        } else if self.style == .FullScreen {
-//            self.fullScreenViewController.present(alertController, animated: true, completion: nil)
-//        }
+
         let vc = UIViewController()
         vc.view.backgroundColor = .clear
         self.alertWindow?.rootViewController = vc

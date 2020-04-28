@@ -16,7 +16,6 @@ class JLConsoleLogModel: NSObject {
     public internal(set) var time: TimeInterval = 0.0
     
     
-    
     convenience init(options:JLLogOptions) {
         self.init()
         self.info = options.info

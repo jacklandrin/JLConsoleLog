@@ -1,0 +1,25 @@
+{
+  "name": "JLConsoleLog",
+  "version": "1.0.0",
+  "authors": {
+    "jacklandrin": "jacklandrin@hotmail.com"
+  },
+  "homepage": "http://www.jacklandrin.com",
+  "summary": "console log",
+  "source": {
+    "git": "https://github.com/jacklandrin/JLConsoleLog",
+    "tag": "v1.0.0"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "platforms": {
+    "ios": "9.0"
+  },
+  "prefix_header_file": "JLConsoleLog/JLConsoleLog.h",
+  "source_files": [
+    "JLConsoleLog/**/*.{h,swift}"
+  ],
+  "requires_arc": true
+}
