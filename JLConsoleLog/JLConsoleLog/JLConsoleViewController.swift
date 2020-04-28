@@ -10,7 +10,7 @@ import UIKit
 
 private let optionalViewHeight: CGFloat = 100
 
-class JLConsoleViewController: UIViewController {
+class JLConsoleViewController: UIViewController, JLConsoleViewControllerProvider {
     // MARK: - private property
     private var presented:Bool = false
     
@@ -97,4 +97,8 @@ class JLConsoleViewController: UIViewController {
         }
     }
      
+}
+
+protocol JLConsoleViewControllerProvider {
+    func presentInWindow(window: UIWindow?, animated:Bool)
 }

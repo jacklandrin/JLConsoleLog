@@ -14,10 +14,10 @@ public enum ConsolePresentationStyle:Int {
     case Hidden = 0
     case FullScreen
     case Floating
+    case Bubble
 }
 
-public class JLConsoleController: NSObject, OptionalViewDelegate {
-    
+public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewControllerDelegate {
     // MARK: - shared instance
     public static let shared = JLConsoleController()
     
@@ -30,6 +30,8 @@ public class JLConsoleController: NSObject, OptionalViewDelegate {
                 self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
             case .FullScreen:
                 self.fullScreenViewController.presentInWindow(window: self.floatingWindow, animated: true)
+            case .Bubble:
+                self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
             case .Hidden:
                 self.floatingWindow?.isHidden = true
             }
@@ -120,6 +122,12 @@ public class JLConsoleController: NSObject, OptionalViewDelegate {
         return vc
     }()
     
+    lazy private var bubbleViewController:JLBubbleViewController = {
+        let vc = JLBubbleViewController()
+        vc.delegate = self
+        return vc
+    }()
+    
     public func register(newCategory:JLConsoleLogCategory) {
         self.allCategories.append(newCategory)
     }
@@ -189,6 +197,19 @@ public class JLConsoleController: NSObject, OptionalViewDelegate {
         JLConsoleLogManager.consoleLogNotificationCenter.post(name: ConsoleHasDismissedNotification, object: nil)
         
     }
+    
+    func showBubble(optionalView: JLConsoleOptionalView) {
+        self.floatingViewController.dismiss(animated: true, completion: nil)
+        self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
+        self.style = .Bubble
+    }
+    
+    func dismissBubble(bubble: JLBubbleViewController) {
+        self.bubbleViewController.dismiss(animated: true, completion: nil)
+        self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
+        self.style = .Floating
+    }
+    
     // MARK: - private function
     private func showFilterViewController(type:FilterType) {
         let filterViewController = JLConsoleFilterViewController(style: .plain, filterType: type)

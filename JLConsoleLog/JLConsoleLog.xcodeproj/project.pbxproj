@@ -22,6 +22,7 @@
 		CCAD67592457E40A00E5D141 /* JLConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD674D2457E40A00E5D141 /* JLConsoleViewController.swift */; };
 		CCAD675A2457E40A00E5D141 /* JLConsoleLogTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD674E2457E40A00E5D141 /* JLConsoleLogTableView.swift */; };
 		CCAD675B2457E40A00E5D141 /* JLConsoleFloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD674F2457E40A00E5D141 /* JLConsoleFloatingViewController.swift */; };
+		CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD675E245809C500E5D141 /* JLBubbleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CCAD674D2457E40A00E5D141 /* JLConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLConsoleViewController.swift; sourceTree = "<group>"; };
 		CCAD674E2457E40A00E5D141 /* JLConsoleLogTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLConsoleLogTableView.swift; sourceTree = "<group>"; };
 		CCAD674F2457E40A00E5D141 /* JLConsoleFloatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLConsoleFloatingViewController.swift; sourceTree = "<group>"; };
+		CCAD675E245809C500E5D141 /* JLBubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLBubbleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,19 +97,20 @@
 		CCAD672C2457E3CA00E5D141 /* JLConsoleLog */ = {
 			isa = PBXGroup;
 			children = (
+				CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */,
 				CCAD67472457E40A00E5D141 /* DispatchMainSafe.swift */,
 				CCAD67462457E40A00E5D141 /* JLConsoleCanvasView.swift */,
 				CCAD67492457E40A00E5D141 /* JLConsoleController.swift */,
 				CCAD67452457E40A00E5D141 /* JLConsoleFilterViewController.swift */,
+				CCAD674D2457E40A00E5D141 /* JLConsoleViewController.swift */,
 				CCAD674F2457E40A00E5D141 /* JLConsoleFloatingViewController.swift */,
+				CCAD675E245809C500E5D141 /* JLBubbleViewController.swift */,
 				CCAD67482457E40A00E5D141 /* JLConsoleLog.swift */,
 				CCAD67442457E40900E5D141 /* JLConsoleLogDetailViewController.swift */,
 				CCAD674A2457E40A00E5D141 /* JLConsoleLogManager.swift */,
 				CCAD674B2457E40A00E5D141 /* JLConsoleLogModel.swift */,
 				CCAD674E2457E40A00E5D141 /* JLConsoleLogTableView.swift */,
 				CCAD674C2457E40A00E5D141 /* JLConsoleOptionalView.swift */,
-				CCAD674D2457E40A00E5D141 /* JLConsoleViewController.swift */,
-				CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */,
 				CCAD672E2457E3CA00E5D141 /* Info.plist */,
 			);
 			path = JLConsoleLog;
@@ -239,6 +242,7 @@
 				CCAD67532457E40A00E5D141 /* DispatchMainSafe.swift in Sources */,
 				CCAD67552457E40A00E5D141 /* JLConsoleController.swift in Sources */,
 				CCAD67592457E40A00E5D141 /* JLConsoleViewController.swift in Sources */,
+				CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */,
 				CCAD67502457E40A00E5D141 /* JLConsoleLogDetailViewController.swift in Sources */,
 				CCAD675B2457E40A00E5D141 /* JLConsoleFloatingViewController.swift in Sources */,
 				CCAD67572457E40A00E5D141 /* JLConsoleLogModel.swift in Sources */,
@@ -398,6 +402,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JLConsoleLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,6 +429,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JLConsoleLog/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

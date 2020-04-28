@@ -12,6 +12,7 @@ protocol OptionalViewDelegate: NSObject {
     func clickSettingButton(optionalView:JLConsoleOptionalView)
     func shouldEnterFullScreen(optionalView:JLConsoleOptionalView) -> Bool
     func shouldExitFullScreen(optionalView:JLConsoleOptionalView) -> Bool
+    func showBubble(optionalView:JLConsoleOptionalView)
     func clickCloseButton(optionalView:JLConsoleOptionalView)
 }
 
@@ -24,8 +25,10 @@ class JLConsoleOptionalView: UIView {
         didSet {
             if isFullScreen {
                 self.fullScreenButton.backgroundColor = UIColor.red
+                self.bubbleButton.isHidden = true
             } else {
                 self.fullScreenButton.backgroundColor = UIColor.blue
+                self.bubbleButton.isHidden = false
             }
         }
     }
@@ -46,6 +49,15 @@ class JLConsoleOptionalView: UIView {
         fullScreenButton.setTitle("🂠", for: .normal)
         fullScreenButton.addTarget(self, action: #selector(fullScreenButtonClick(button:)), for: .touchUpInside)
         return fullScreenButton
+    }()
+    
+    lazy public var bubbleButton:UIButton = {
+        let bubbleButton = UIButton(frame: CGRect(x: self.frame.width - 80, y: self.frame.height - 42, width: 30, height: 30))
+        bubbleButton.backgroundColor = .yellow
+        bubbleButton.setTitle("◎", for: .normal)
+        bubbleButton.setTitleColor(.green, for: .normal)
+        bubbleButton.addTarget(self, action: #selector(bubbleButtonClick(button:)), for: .touchUpInside)
+        return bubbleButton
     }()
     
     lazy public var warningLabel:UILabel = {
@@ -106,6 +118,13 @@ class JLConsoleOptionalView: UIView {
         delegate.clickCloseButton(optionalView: self)
     }
     
+    @objc func bubbleButtonClick(button:UIButton) {
+        guard let delegate = self.delegate else {
+            return
+        }
+        delegate.showBubble(optionalView: self)
+    }
+    
     // MARK: - function
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -113,6 +132,7 @@ class JLConsoleOptionalView: UIView {
         self.addSubview(self.fullScreenButton)
         self.addSubview(self.warningLabel)
         self.addSubview(self.errorLabel)
+        self.addSubview(self.bubbleButton)
         self.addSubview(self.closeButton)
         self.backgroundColor = UIColor.init(white: 0.5, alpha: 1)
         
@@ -137,5 +157,6 @@ class JLConsoleOptionalView: UIView {
         self.warningLabel.frame = CGRect(x: 90, y: self.frame.height - 42, width: 60, height: 30)
         self.errorLabel.frame = CGRect(x: 160, y: self.frame.height - 42, width: 60, height: 30)
         self.closeButton.frame = CGRect(x: self.frame.width - 40, y: self.frame.height - 42, width: self.closeButton.frame.width, height: self.closeButton.frame.height)
+        self.bubbleButton.frame = CGRect(x: self.frame.width - 80, y: self.frame.height - 42, width: 30, height: 30)
     }
 }

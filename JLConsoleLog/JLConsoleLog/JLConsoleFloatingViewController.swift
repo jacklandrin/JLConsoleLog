@@ -14,7 +14,6 @@ let ConsoleViewDidTouchNotification = NSNotification.Name(rawValue:"ConsoleViewD
 class JLConsoleFloatingViewController: JLConsoleViewController {
     // MARK: - property
     private var draggingStartOriginY:CGFloat = 0.0
-    private var lastDeltaToStatusBar:CGFloat = 0.0
     
     private var hideTimer:Timer?
     private var presented:Bool = false
@@ -70,7 +69,7 @@ class JLConsoleFloatingViewController: JLConsoleViewController {
         
         self.view.frame = CGRect(x: self.view.frame.origin.x, y: 64, width: consoleWindow.frame.width, height: 250)
         self.view.layer.shadowPath = UIBezierPath(rect: self.view.bounds).cgPath
-        self.view.layer.shadowColor = UIColor(white: 0.0, alpha: 0.4).cgColor
+        self.view.layer.shadowColor = UIColor(white: 0.2, alpha: 0.4).cgColor
         self.view.layer.shadowRadius = 30
         self.view.alpha = 1
         
@@ -195,7 +194,7 @@ class UIPanNavigationGestureRecognizer: UIGestureRecognizer {
         if self.state == .possible {
             let x = currentPoint.x - startPoint.y
             let y = abs(currentPoint.y - startPoint.y)
-            if x > 5 && x / y > 2 {
+            if x > 8 && x / y > 2 {
                 self.state = .began
                 return
             }
