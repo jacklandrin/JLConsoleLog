@@ -59,7 +59,7 @@ class JLConsoleLogDetailViewController: UITableViewController {
             cell?.titleLabel!.text = "category"
             cell?.detailStr = self.log.category
         case 3:
-            cell?.titleLabel!.text = "contextData"
+            cell?.titleLabel!.text = "context"
             cell?.detailStr = self.log.invokingInfo
         case 4:
             cell?.titleLabel!.text = "time"

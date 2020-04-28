@@ -55,6 +55,7 @@ private func _JLLevelLog(level:JLConsoleLogLevel, category:JLConsoleLogCategory,
     let formattedString = formats.joined(separator: "\r\n")
     let options = JLLogOptions(level: level, category: category, contextData: contextData, info: formattedString)
     JLLog(options: options)
+    #if DEBUG
     if needPrint {
         if #available(iOS 10.0, *) {
             let logger = OSLog(subsystem: Bundle.main.bundleIdentifier ?? "com.JLConsoleLog", category: category)
@@ -63,7 +64,7 @@ private func _JLLevelLog(level:JLConsoleLogLevel, category:JLConsoleLogCategory,
             print("\(level)  \(category)  \(contextData) \(formattedString)")
         }
     }
-    
+    #endif
     if hasFollowingAction {
         JLConsoleController.shared.followingAction?(options)
     }
