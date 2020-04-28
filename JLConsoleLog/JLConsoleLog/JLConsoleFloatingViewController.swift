@@ -21,7 +21,7 @@ class JLConsoleFloatingViewController: JLConsoleViewController {
     // MARK: - override
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.lightGray
+        self.view.backgroundColor = UIColor.black
         let gesture = UIPanNavigationGestureRecognizer(target: self, action: #selector(optionViewPanGesture(panGesture:)))
         self.optionalView.addGestureRecognizer(gesture)
         self.optionalView.isFullScreen = false

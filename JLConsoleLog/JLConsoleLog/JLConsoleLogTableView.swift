@@ -94,7 +94,7 @@ class JLConsoleLogTableView: UITableView, UITableViewDelegate, UITableViewDataSo
         case .Warning:
             cell?.textLabel?.textColor = UIColor.yellow
         default:
-            cell?.textLabel?.textColor = UIColor.black
+            cell?.textLabel?.textColor = UIColor.green
         }
         
         cell?.backgroundColor = UIColor.clear

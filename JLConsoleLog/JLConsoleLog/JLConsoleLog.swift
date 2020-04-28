@@ -41,7 +41,7 @@ private func convertLogType(level: JLConsoleLogLevel) -> OSLogType {
     case .Info:
         return .info
     case .Warning:
-        return .fault
+        return .default
     case .Error:
         return .error
     }

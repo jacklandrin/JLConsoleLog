@@ -98,7 +98,7 @@ class JLConsoleOptionalView: UIView {
         self.addSubview(self.settingButton)
         self.addSubview(self.fullScreenButton)
         self.addSubview(self.closeButton)
-        self.backgroundColor = UIColor.init(white: 0.9, alpha: 1)
+        self.backgroundColor = UIColor.init(white: 0.5, alpha: 1)
     }
     
     required init?(coder: NSCoder) {

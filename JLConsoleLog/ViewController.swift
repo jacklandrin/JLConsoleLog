@@ -37,6 +37,14 @@ class ViewController: UIViewController {
         addDebugLogButton.addTarget(self, action: #selector(addDebugLog(button:)), for: .touchUpInside)
         self.view.addSubview(addDebugLogButton)
         
+        let nextPageButton = UIButton(frame: CGRect(x: 100, y: 450, width: 200, height: 40))
+        nextPageButton.setTitle("next page", for: .normal)
+        nextPageButton.setTitleColor(.systemPink, for: .normal)
+        nextPageButton.backgroundColor = .blue
+        nextPageButton.addTarget(self, action: #selector(gotoNextPage(button:)), for: .touchUpInside)
+        self.view.addSubview(nextPageButton)
+        
+        
         if #available(iOS 10.0, *) {
             let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
                 JLVerboseLog(category: TestLog, needPrint: true , contextData: ["test":1], formats: String(self.count), #function,String(#line))
@@ -78,7 +86,12 @@ class ViewController: UIViewController {
     }
     
     @objc func addDebugLog(button:UIButton) {
-        JLDebugLog(category: TestLog,hasFollowingAction: true, contextData: ["test":1], formats: "debug info", #function,String(#line))
+        JLDebugLog(category: TestLog,hasFollowingAction: true, contextData: ["test":2], formats: "debug info", #function,String(#line))
+    }
+    
+    @objc func gotoNextPage(button:UIButton) {
+        let vc = SecondaryViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

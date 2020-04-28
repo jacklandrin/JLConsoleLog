@@ -30,7 +30,7 @@ class JLConsoleViewController: UIViewController {
     // MARK: - override function
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .lightGray
+        self.view.backgroundColor = .black
         self.optionalView.isFullScreen = true
         self.canvasView.isShowSearchBar = true
         self.view.addSubview(optionalView)

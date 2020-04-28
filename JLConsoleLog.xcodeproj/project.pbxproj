@@ -27,6 +27,7 @@
 		CCAD66DD2455D98900E5D141 /* JLConsoleLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66DC2455D98900E5D141 /* JLConsoleLogDetailViewController.swift */; };
 		CCAD66DF2455E7D600E5D141 /* JLConsoleFloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66DE2455E7D600E5D141 /* JLConsoleFloatingViewController.swift */; };
 		CCAD66E12455E8AE00E5D141 /* JLConsoleFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66E02455E8AE00E5D141 /* JLConsoleFilterViewController.swift */; };
+		CCAD66E32457CA0B00E5D141 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66E22457CA0B00E5D141 /* SecondaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		CCAD66DC2455D98900E5D141 /* JLConsoleLogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogDetailViewController.swift; sourceTree = "<group>"; };
 		CCAD66DE2455E7D600E5D141 /* JLConsoleFloatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleFloatingViewController.swift; sourceTree = "<group>"; };
 		CCAD66E02455E8AE00E5D141 /* JLConsoleFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleFilterViewController.swift; sourceTree = "<group>"; };
+		CCAD66E22457CA0B00E5D141 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				CCAD6699245489E000E5D141 /* AppDelegate.swift */,
 				CCAD669B245489E000E5D141 /* SceneDelegate.swift */,
 				CCAD669D245489E000E5D141 /* ViewController.swift */,
+				CCAD66E22457CA0B00E5D141 /* SecondaryViewController.swift */,
 				CCAD669F245489E000E5D141 /* Main.storyboard */,
 				CCAD66A2245489E200E5D141 /* Assets.xcassets */,
 				CCAD66A4245489E200E5D141 /* LaunchScreen.storyboard */,
@@ -318,6 +321,7 @@
 				CCAD66D52455944C00E5D141 /* JLConsoleViewController.swift in Sources */,
 				CCAD66DF2455E7D600E5D141 /* JLConsoleFloatingViewController.swift in Sources */,
 				CCAD669C245489E000E5D141 /* SceneDelegate.swift in Sources */,
+				CCAD66E32457CA0B00E5D141 /* SecondaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@ class JLConsoleLogModel: NSObject {
         self.level = options.level
         self.category = options.category
         self.invokingInfo = convertContextData(options.contextData)
+        self.time = Date().timeIntervalSince1970
     }
     
     func convertContextData(_ contextData: Dictionary<String,Any>) -> String {
