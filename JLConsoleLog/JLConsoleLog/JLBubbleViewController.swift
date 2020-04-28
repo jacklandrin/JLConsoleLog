@@ -32,6 +32,7 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         let label = UILabel(frame: CGRect(x: 2, y: 0, width: 60, height: 30))
         label.text = "⚠ 0"
         label.textColor = .yellow
+        label.textAlignment = .center
         return label
     }()
     
@@ -39,6 +40,7 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         let label = UILabel(frame: CGRect(x: 2, y: 34, width: 60, height: 30))
         label.text = "☠︎ 0"
         label.textColor = .red
+        label.textAlignment = .center
         return label
     }()
     
