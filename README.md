@@ -17,6 +17,7 @@ There are four buttons on the option view of floating mode. The first button is 
 The floating console could become translucent automatically after 5s, if you don't touch it. Additional, you can drag floating console and bubble to anywhere to avoid disturb you.
 
 While you tap a log cell, you can enter the detail page of log. 
+
 ![](http://www.jacklandrin.com/wp-content/uploads/2020/04/IMG_4734.png)
 
 ## How to use it in your project?
