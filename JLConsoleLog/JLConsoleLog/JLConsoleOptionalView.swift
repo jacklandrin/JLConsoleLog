@@ -33,22 +33,25 @@ class JLConsoleOptionalView: UIView {
     public weak var delegate: OptionalViewDelegate?
     
     lazy public var settingButton: UIButton = {
-        let settingButton = UIButton(frame: CGRect(x: 10, y: self.frame.height - 30, width: 20, height: 20))
+        let settingButton = UIButton(frame: CGRect(x: 10, y: self.frame.height - 42, width: 30, height: 30))
         settingButton.backgroundColor = UIColor.green
+        settingButton.setTitle("⚙", for: .normal)
         settingButton.addTarget(self, action: #selector(settingButtonClick(button:)), for: .touchUpInside)
         return settingButton
     }()
     
     lazy public var fullScreenButton:UIButton = {
-        let fullScreenButton = UIButton(frame: CGRect(x: 40, y: self.frame.height - 30, width: 20, height: 20))
+        let fullScreenButton = UIButton(frame: CGRect(x: 50, y: self.frame.height - 42, width: 30, height: 30))
         fullScreenButton.backgroundColor = UIColor.blue
+        fullScreenButton.setTitle("🂠", for: .normal)
         fullScreenButton.addTarget(self, action: #selector(fullScreenButtonClick(button:)), for: .touchUpInside)
         return fullScreenButton
     }()
     
     lazy public var closeButton:UIButton = {
-        let closeButton = UIButton(frame: CGRect(x: self.frame.width - 30, y: self.frame.height - 30, width: 20, height: 20))
+        let closeButton = UIButton(frame: CGRect(x: self.frame.width - 40, y: self.frame.height - 42, width: 30, height: 30))
         closeButton.backgroundColor = UIColor.purple
+        closeButton.setTitle("☒", for: .normal)
         closeButton.addTarget(self, action: #selector(closeButtonClick(button:)), for: .touchUpInside)
         return closeButton
     }()
@@ -70,11 +73,13 @@ class JLConsoleOptionalView: UIView {
         
         if isFullScreen {
             if delegate.shouldExitFullScreen(optionalView: self) {
-                button.backgroundColor = UIColor.blue
+                button.backgroundColor = UIColor.red
+                button.setTitle("🁙", for: .normal)
             }
         } else {
             if delegate.shouldEnterFullScreen(optionalView: self) {
-                button.backgroundColor = UIColor.red
+                button.backgroundColor = UIColor.blue
+                button.setTitle("🂠", for: .normal)
             }
         }
     }
@@ -103,8 +108,8 @@ class JLConsoleOptionalView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        self.settingButton.frame = CGRect(x: self.settingButton.frame.origin.x, y: self.frame.height - 30, width: self.settingButton.frame.width, height: self.settingButton.frame.height)
-        self.fullScreenButton.frame = CGRect(x: self.fullScreenButton.frame.origin.x, y: self.frame.height - 30, width: self.fullScreenButton.frame.width, height: self.fullScreenButton.frame.height)
-        self.closeButton.frame = CGRect(x: self.frame.width - 30, y: self.frame.height - 30, width: self.closeButton.frame.width, height: self.closeButton.frame.height)
+        self.settingButton.frame = CGRect(x: self.settingButton.frame.origin.x, y: self.frame.height - 42, width: self.settingButton.frame.width, height: self.settingButton.frame.height)
+        self.fullScreenButton.frame = CGRect(x: self.fullScreenButton.frame.origin.x, y: self.frame.height - 42, width: self.fullScreenButton.frame.width, height: self.fullScreenButton.frame.height)
+        self.closeButton.frame = CGRect(x: self.frame.width - 40, y: self.frame.height - 42, width: self.closeButton.frame.width, height: self.closeButton.frame.height)
     }
 }

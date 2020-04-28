@@ -10,9 +10,14 @@ import UIKit
 
 fileprivate let cellIdentifier = "cellIdentifier"
 
-struct FilterModel {
+class FilterModel {
     var title: String
     var isSelectd: Bool
+    
+    init(title:String, isSelected:Bool) {
+        self.title = title
+        self.isSelectd = isSelected
+    }
 }
 
 enum FilterType {
@@ -58,17 +63,17 @@ class JLConsoleFilterViewController: UITableViewController {
         
         var tempDataArray:[FilterModel] = [FilterModel]()
         for title in tempArray {
-            var filter = FilterModel(title: title, isSelectd: false)
+            let filter = FilterModel(title: title, isSelected: false)
             switch self.filterType {
             case .Category:
                 if JLConsoleController.shared.logManager.filterCategories.count == 0 {
-                    filter.isSelectd = true
+                    filter.isSelectd = false
                 } else {
-                    filter.isSelectd = JLConsoleController.shared.logManager.filterCategories .contains(title)
+                    filter.isSelectd = JLConsoleController.shared.logManager.filterCategories.contains(title)
                 }
             case .Level:
                 if JLConsoleController.shared.logManager.filterLevels.count == 0 {
-                    filter.isSelectd = true
+                    filter.isSelectd = false
                 } else {
                     filter.isSelectd = JLConsoleController.shared.logManager.filterLevels.contains(JLConsoleLogLevel(rawValue: title)!)
                 }
@@ -116,8 +121,8 @@ class JLConsoleFilterViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var filter = self.dataArray[indexPath.row]
-        filter.isSelectd.toggle()
+        let filter = self.dataArray[indexPath.row]
+        filter.isSelectd = !filter.isSelectd
         tableView.reloadData()
         let resultIndices = self.dataArray.indices.filter{self.dataArray[$0].isSelectd}
         switch self.filterType {

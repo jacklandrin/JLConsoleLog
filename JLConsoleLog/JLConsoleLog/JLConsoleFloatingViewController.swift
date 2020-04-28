@@ -8,6 +8,7 @@
 
 import UIKit
 
+private let optionalViewHeight: CGFloat = 50
 let ConsoleViewDidTouchNotification = NSNotification.Name(rawValue:"ConsoleViewDidTouchNotification")
 
 class JLConsoleFloatingViewController: JLConsoleViewController {
@@ -48,10 +49,10 @@ class JLConsoleFloatingViewController: JLConsoleViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.view.frame = CGRect(x: self.view.frame.origin.x, y: 64, width: self.view.frame.width, height: 250)
+        self.view.frame = CGRect(x: self.view.frame.origin.x, y: optionalViewHeight, width: self.view.frame.width, height: 250)
         
-        self.optionalView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 40)
-        self.canvasView.frame = CGRect(x: 0, y: 40, width: self.view.frame.width, height: self.view.frame.height - 40)
+        self.optionalView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: optionalViewHeight)
+        self.canvasView.frame = CGRect(x: 0, y: optionalViewHeight, width: self.view.frame.width, height: self.view.frame.height - optionalViewHeight)
     }
     
     override func presentInWindow(window: UIWindow?, animated: Bool) {

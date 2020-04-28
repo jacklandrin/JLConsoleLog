@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let optionalViewHeight: CGFloat = 64
+private let optionalViewHeight: CGFloat = 100
 
 class JLConsoleViewController: UIViewController {
     // MARK: - private property

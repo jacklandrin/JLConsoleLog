@@ -50,7 +50,7 @@ class JLConsoleController: NSObject, OptionalViewDelegate {
     public internal(set) var allCategories:[JLConsoleLogCategory] = [JLConsoleLogCategory]()
     
     
-    private let alertWindow: UIWindow? = {
+    lazy private var alertWindow: UIWindow? = {
         let win:UIWindow
         if #available(iOS 13, *) {
             let windowScene = UIApplication.shared
