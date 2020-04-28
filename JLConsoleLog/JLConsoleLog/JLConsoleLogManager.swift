@@ -11,6 +11,8 @@ import Foundation
 let AllLogCountLimit = 1000
 let AllLogsDidChangeNotification = NSNotification.Name(rawValue:"AllLogsDidChangeNotification")
 let FilterSettingChangeNotification = NSNotification.Name(rawValue:"FilterSettingChangeNotification")
+let WarningCountChangeNotification = NSNotification.Name(rawValue: "WarningCountChangeNotification")
+let ErrorCountChangeNotification = NSNotification.Name(rawValue: "ErrorCountChangeNotification")
 
 class JLConsoleLogManager: NSObject {
     // MARK: - static property
@@ -54,7 +56,17 @@ class JLConsoleLogManager: NSObject {
     public internal(set) var allLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
     public internal(set) var filteredLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
     public internal(set) var warningCount: UInt = 0
+    {
+        didSet{
+            self.notifyWarningChange()
+        }
+    }
     public internal(set) var errorCount: UInt = 0
+    {
+        didSet{
+            self.notifyErrorChange()
+        }
+    }
     public var logEnable: Bool = true
     // MARK: - private property
     private var pendingFilteredLogArray:[JLConsoleLogModel] = [JLConsoleLogModel]()
@@ -67,13 +79,19 @@ class JLConsoleLogManager: NSObject {
         dispatch_main_async_safe { [weak self] in
             guard let strongSelf = self else { return }
             if strongSelf.allLogArray.count >= AllLogCountLimit {
+                let warningArray = strongSelf.allLogArray[0...AllLogCountLimit / 2].filter{$0.level == .Warning}
+                strongSelf.warningCount -= UInt(warningArray.count)
+                
+                let errorArray = strongSelf.allLogArray[0...AllLogCountLimit / 2].filter{$0.level == .Error}
+                strongSelf.errorCount -= UInt(errorArray.count)
+                
                 strongSelf.allLogArray.removeSubrange(0...AllLogCountLimit / 2)
                 strongSelf.reloadFilteredLogArray()
             }
             
             strongSelf.allLogArray.append(log)
             strongSelf.notifyLogArrayChange()
-            //TODO
+            
             if strongSelf.logMatchesCurrentFilter(log: log) {
                 strongSelf.batchInsertFilteredLog(log: log)
             }
@@ -146,5 +164,13 @@ class JLConsoleLogManager: NSObject {
     
     private func notifyFilterSettingChange() {
         JLConsoleLogManager.consoleLogNotificationCenter.post(name: FilterSettingChangeNotification, object: self)
+    }
+    
+    private func notifyWarningChange() {
+        JLConsoleLogManager.consoleLogNotificationCenter.post(name: WarningCountChangeNotification, object: self)
+    }
+    
+    private func notifyErrorChange() {
+        JLConsoleLogManager.consoleLogNotificationCenter.post(name: ErrorCountChangeNotification, object: self)
     }
 }

@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         
         JLConsoleController.shared.followingAction = { options in
             print("add a log \(options.level.rawValue)  \(options.category)")
-            //send a log to server or other actions
+            //send a track log to server or other actions
         }
         
         JLConsoleController.shared.register(newCategory: TestLog) //registered category could be filtered
@@ -67,10 +67,10 @@ class ViewController: UIViewController {
     @objc func pressShowButton(button:UIButton) {
         if JLConsoleController.shared.style == .Hidden {
             button.setTitle("hide console", for: .normal)
-            JLConsoleController.shared.style = .Floating
+            JLConsoleController.shared.style = .Floating //show console in floating fashion
         } else {
             button.setTitle("show console", for: .normal)
-            JLConsoleController.shared.style = .Hidden
+            JLConsoleController.shared.style = .Hidden //hide console
         }
         
     }

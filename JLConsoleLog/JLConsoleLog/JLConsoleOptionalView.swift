@@ -48,6 +48,20 @@ class JLConsoleOptionalView: UIView {
         return fullScreenButton
     }()
     
+    lazy public var warningLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x: 90, y: self.frame.height - 42, width: 60, height: 30))
+        label.text = "⚠ 0"
+        label.textColor = .yellow
+        return label
+    }()
+    
+    lazy public var errorLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x: 160, y: self.frame.height - 42, width: 60, height: 30))
+        label.text = "☠︎ 0"
+        label.textColor = .red
+        return label
+    }()
+    
     lazy public var closeButton:UIButton = {
         let closeButton = UIButton(frame: CGRect(x: self.frame.width - 40, y: self.frame.height - 42, width: 30, height: 30))
         closeButton.backgroundColor = UIColor.purple
@@ -97,8 +111,18 @@ class JLConsoleOptionalView: UIView {
         super.init(frame: frame)
         self.addSubview(self.settingButton)
         self.addSubview(self.fullScreenButton)
+        self.addSubview(self.warningLabel)
+        self.addSubview(self.errorLabel)
         self.addSubview(self.closeButton)
         self.backgroundColor = UIColor.init(white: 0.5, alpha: 1)
+        
+        JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: WarningCountChangeNotification, object: nil, queue: .main, using: { _ in
+            self.warningLabel.text = "⚠ \(JLConsoleController.shared.logManager.warningCount)"
+        })
+        
+        JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: ErrorCountChangeNotification, object: nil, queue: .main, using: { _ in
+            self.errorLabel.text = "☠︎ \(JLConsoleController.shared.logManager.errorCount)"
+        })
     }
     
     required init?(coder: NSCoder) {
@@ -110,6 +134,8 @@ class JLConsoleOptionalView: UIView {
         
         self.settingButton.frame = CGRect(x: self.settingButton.frame.origin.x, y: self.frame.height - 42, width: self.settingButton.frame.width, height: self.settingButton.frame.height)
         self.fullScreenButton.frame = CGRect(x: self.fullScreenButton.frame.origin.x, y: self.frame.height - 42, width: self.fullScreenButton.frame.width, height: self.fullScreenButton.frame.height)
+        self.warningLabel.frame = CGRect(x: 90, y: self.frame.height - 42, width: 60, height: 30)
+        self.errorLabel.frame = CGRect(x: 160, y: self.frame.height - 42, width: 60, height: 30)
         self.closeButton.frame = CGRect(x: self.frame.width - 40, y: self.frame.height - 42, width: self.closeButton.frame.width, height: self.closeButton.frame.height)
     }
 }

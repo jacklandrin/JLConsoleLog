@@ -27,6 +27,7 @@ class JLConsoleCanvasView: UIView, UISearchBarDelegate {
         searchBar.delegate = self
         searchBar.showsCancelButton = true
         searchBar.isHidden = true
+        
         return searchBar
     }()
     
