@@ -49,7 +49,7 @@ public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewCont
     
     public var followingAction: ((JLLogOptions) -> Void)?
     
-    public internal(set) var allCategories:[JLConsoleLogCategory] = [JLConsoleLogCategory]()
+    public internal(set) var allCategories:Set<JLConsoleLogCategory> = Set<JLConsoleLogCategory>()
     
     
     lazy private var alertWindow: UIWindow? = {
@@ -129,7 +129,8 @@ public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewCont
     }()
     
     public func register(newCategory:JLConsoleLogCategory) {
-        self.allCategories.append(newCategory)
+        self.allCategories.insert(newCategory)
+        
     }
     
    // MARK: - delegate
