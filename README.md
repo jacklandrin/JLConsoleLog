@@ -1,7 +1,7 @@
 # JLConsoleLog
 
 ## What is JLConsoleLog?
-**JLConsoleLog** is an awesome tool to help swift developer log information in both development and production environment. You won't miss any key and useful logs about the bugs in non-debug mode. You also can integrate it in your project's backdoor toolkit, it will help you solve vital issues.
+**JLConsoleLog** is an awesome In-App tool to help swift developer log information in both development and production environment. You won't miss any key and useful logs about the bugs in non-debug mode. You also can integrate it in your project's backdoor toolkit, it will help you solve vital issues.
 
 ## How to operate it?
 JLConsoleLog supports three types of style (display mode) -- **Floating**, **Bubble** and **FullScreen**
