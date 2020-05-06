@@ -16,7 +16,12 @@ enum BubbleOnEdge: Int {
     case left = 0, top, right, bottom
 }
 
-let BubbleEdge:CGFloat = 64
+//let BubbleEdge:CGFloat = 128
+//let SmallBubbleEdge:CGFloat = 64
+
+var BubbleEdge:CGFloat {
+    JLConsoleController.shared.performanceMonitable ? 134 : 64
+}
 
 class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider {
 
@@ -29,7 +34,7 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
     public var delegate:BubbleViewControllerDelegate?
     
     lazy public var warningLabel:UILabel = {
-        let label = UILabel(frame: CGRect(x: 2, y: 0, width: 60, height: 30))
+        let label = UILabel(frame: CGRect(x: 2, y: 0, width: 60, height: 28))
         label.text = "⚠ 0"
         label.textColor = .yellow
         label.textAlignment = .center
@@ -37,10 +42,27 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
     }()
     
     lazy public var errorLabel:UILabel = {
-        let label = UILabel(frame: CGRect(x: 2, y: 34, width: 60, height: 30))
+        let label = UILabel(frame: CGRect(x: 2, y: 32, width: 60, height: 28))
         label.text = "☠︎ 0"
         label.textColor = .red
         label.textAlignment = .center
+        return label
+    }()
+    
+    lazy public var cpuLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x: 2, y: 64, width: 100, height: 30))
+        label.text = "cpu: 0"
+        label.textColor = .green
+        label.textAlignment = .center
+        return label
+    }()
+    
+    lazy public var memoryLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x: 2, y: 96, width: 130, height: 30))
+        label.text = "memory: 0MB"
+        label.textColor = .green
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 14)
         return label
     }()
     
@@ -55,6 +77,8 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         self.view.backgroundColor = .gray
         self.view.addSubview(warningLabel)
         self.view.addSubview(errorLabel)
+        self.view.addSubview(cpuLabel)
+        self.view.addSubview(memoryLabel)
         self.view.addSubview(invisableButton)
         
         let gesture = UIPanBubbleGestureRecognizer(target: self, action: #selector(panGesture(panGesture:)))
@@ -67,6 +91,26 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: ErrorCountChangeNotification, object: nil, queue: .main, using: { _ in
             self.errorLabel.text = "☠︎ \(JLConsoleController.shared.logManager.errorCount)"
         })
+        
+        JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: PerformanceMonitorNotification, object: nil, queue: .main, using: { [weak self] notification in
+            guard let strongSelf = self else { return }
+            let currentPerformance:[PerformanceMonitor.monitorType:String] = notification.object as! [PerformanceMonitor.monitorType : String]
+            let cpuText:String! = currentPerformance[.cpu] ?? "0"
+            strongSelf.cpuLabel.text = "cpu: " + String(cpuText)  + "%"
+            let cpuDouble:Double = (cpuText as NSString).doubleValue
+            if cpuDouble > 80 {
+                strongSelf.cpuLabel.textColor = .red
+            } else {
+                strongSelf.cpuLabel.textColor = .green
+            }
+            
+            let memoryText:String! = currentPerformance[.memory] ?? "0"
+            strongSelf.memoryLabel.text = "memory: " + String(memoryText) + "MB"
+            
+        })
+        
+        cpuLabel.isHidden = !JLConsoleController.shared.performanceMonitable
+        memoryLabel.isHidden = !JLConsoleController.shared.performanceMonitable
     }
     
     
@@ -122,7 +166,12 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         self.view.alpha = 0.5
         consoleWindow.addSubview(self.view)
     }
-
+    
+    func changeShownItems() {
+        cpuLabel.isHidden = !JLConsoleController.shared.performanceMonitable
+        memoryLabel.isHidden = !JLConsoleController.shared.performanceMonitable
+        self.view.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y, width: BubbleEdge, height: BubbleEdge)
+    }
     
     // MARK: - private function
     private func updateViewFrameToConstrainedAreaIfNeeded() {
@@ -176,6 +225,8 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         }
         delegate.dismissBubble(bubble: self)
     }
+    
+    
 }
 
 

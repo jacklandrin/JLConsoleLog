@@ -17,7 +17,7 @@ public enum ConsolePresentationStyle:Int {
     case Bubble
 }
 
-public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewControllerDelegate {
+public class JLConsoleController: NSObject {
     // MARK: - shared instance
     public static let shared = JLConsoleController()
     
@@ -44,6 +44,18 @@ public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewCont
     {
         didSet {
             self.logManager.logEnable = logEnabled
+        }
+    }
+    
+    public var performanceMonitable:Bool = false
+    {
+        didSet {
+            if performanceMonitable {
+                PerformanceMonitor.shared.start()
+            } else {
+                PerformanceMonitor.shared.stop()
+            }
+            self.bubbleViewController.changeShownItems()
         }
     }
     
@@ -128,88 +140,15 @@ public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewCont
         return vc
     }()
     
+    public override init() {
+        
+    }
+    
     public func register(newCategory:JLConsoleLogCategory) {
         self.allCategories.insert(newCategory)
         
     }
     
-   // MARK: - delegate
-    func clickSettingButton(optionalView: JLConsoleOptionalView) {
-        let alertController = UIAlertController(title: "setting", message: nil, preferredStyle: .actionSheet)
-        let cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: {_ in
-            self.alertWindow?.isHidden = true
-        })
-        let categoryFilterAction = UIAlertAction(title: "category filter", style: .default, handler: { _ in
-            self.showFilterViewController(type: .Category)
-            self.alertWindow?.isHidden = true
-        })
-        
-        let levelFilterAction = UIAlertAction(title: "level filter", style: .default, handler: { _ in
-            self.showFilterViewController(type: .Level)
-            self.alertWindow?.isHidden = true
-        })
-        
-        let cleanAllLogAction = UIAlertAction(title: "clean all logs", style: .default, handler: { _ in
-            self.logManager.clearAllLogs()
-            self.alertWindow?.isHidden = true
-        })
-        
-        alertController.addAction(cancelAction)
-        alertController.addAction(categoryFilterAction)
-        alertController.addAction(levelFilterAction)
-        alertController.addAction(cleanAllLogAction)
-        
-
-        let vc = UIViewController()
-        vc.view.backgroundColor = .clear
-        self.alertWindow?.rootViewController = vc
-        self.alertWindow?.makeKeyAndVisible()
-        vc.present(alertController, animated: true, completion: nil)
-        self.floatingWindow?.makeKeyAndVisible()
-        self.originalKeyWindow.makeKey()
-    }
-    
-    func shouldEnterFullScreen(optionalView: JLConsoleOptionalView) -> Bool {
-        self.floatingViewController.dismiss(animated: true, completion: nil)
-        self.fullScreenViewController.presentInWindow(window: self.floatingWindow, animated: true)
-        self.style = .FullScreen
-        return true
-    }
-    
-    func shouldExitFullScreen(optionalView: JLConsoleOptionalView) -> Bool {
-        self.fullScreenViewController.dismiss(animated: true, completion: nil)
-        self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
-        self.style = .Floating
-        return true
-    }
-    
-    func clickCloseButton(optionalView: JLConsoleOptionalView) {
-        if optionalView == self.floatingViewController.optionalView {
-            self.floatingViewController.dismiss(animated: true, completion: { [weak self] in
-                guard let strongSelf = self else { return }
-                strongSelf.style = .Hidden
-            })
-        } else if(optionalView == self.fullScreenViewController.optionalView) {
-            self.fullScreenViewController.dismiss(animated: true, completion: { [weak self] in
-                guard let strongSelf = self else { return }
-                strongSelf.style = .Hidden
-            })
-        }
-        JLConsoleLogManager.consoleLogNotificationCenter.post(name: ConsoleHasDismissedNotification, object: nil)
-        
-    }
-    
-    func showBubble(optionalView: JLConsoleOptionalView) {
-        self.floatingViewController.dismiss(animated: true, completion: nil)
-        self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
-        self.style = .Bubble
-    }
-    
-    func dismissBubble(bubble: JLBubbleViewController) {
-        self.bubbleViewController.dismiss(animated: true, completion: nil)
-        self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
-        self.style = .Floating
-    }
     
     // MARK: - private function
     private func showFilterViewController(type:FilterType) {
@@ -220,6 +159,88 @@ public class JLConsoleController: NSObject, OptionalViewDelegate, BubbleViewCont
         } else if self.style == .FullScreen {
             self.fullScreenViewController.present(nvc, animated: true, completion: nil)
         }
+    }
+}
+
+
+extension JLConsoleController: OptionalViewDelegate {
+    func clickSettingButton(optionalView: JLConsoleOptionalView) {
+          let alertController = UIAlertController(title: "setting", message: nil, preferredStyle: .actionSheet)
+          let cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: {_ in
+              self.alertWindow?.isHidden = true
+          })
+          let categoryFilterAction = UIAlertAction(title: "category filter", style: .default, handler: { _ in
+              self.showFilterViewController(type: .Category)
+              self.alertWindow?.isHidden = true
+          })
+          
+          let levelFilterAction = UIAlertAction(title: "level filter", style: .default, handler: { _ in
+              self.showFilterViewController(type: .Level)
+              self.alertWindow?.isHidden = true
+          })
+          
+          let cleanAllLogAction = UIAlertAction(title: "clean all logs", style: .default, handler: { _ in
+              self.logManager.clearAllLogs()
+              self.alertWindow?.isHidden = true
+          })
+          
+          alertController.addAction(cancelAction)
+          alertController.addAction(categoryFilterAction)
+          alertController.addAction(levelFilterAction)
+          alertController.addAction(cleanAllLogAction)
+          
+
+          let vc = UIViewController()
+          vc.view.backgroundColor = .clear
+          self.alertWindow?.rootViewController = vc
+          self.alertWindow?.makeKeyAndVisible()
+          vc.present(alertController, animated: true, completion: nil)
+          self.floatingWindow?.makeKeyAndVisible()
+          self.originalKeyWindow.makeKey()
+      }
+      
+      func shouldEnterFullScreen(optionalView: JLConsoleOptionalView) -> Bool {
+          self.floatingViewController.dismiss(animated: true, completion: nil)
+          self.fullScreenViewController.presentInWindow(window: self.floatingWindow, animated: true)
+          self.style = .FullScreen
+          return true
+      }
+      
+      func shouldExitFullScreen(optionalView: JLConsoleOptionalView) -> Bool {
+          self.fullScreenViewController.dismiss(animated: true, completion: nil)
+          self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
+          self.style = .Floating
+          return true
+      }
+      
+      func clickCloseButton(optionalView: JLConsoleOptionalView) {
+          if optionalView == self.floatingViewController.optionalView {
+              self.floatingViewController.dismiss(animated: true, completion: { [weak self] in
+                  guard let strongSelf = self else { return }
+                  strongSelf.style = .Hidden
+              })
+          } else if(optionalView == self.fullScreenViewController.optionalView) {
+              self.fullScreenViewController.dismiss(animated: true, completion: { [weak self] in
+                  guard let strongSelf = self else { return }
+                  strongSelf.style = .Hidden
+              })
+          }
+          JLConsoleLogManager.consoleLogNotificationCenter.post(name: ConsoleHasDismissedNotification, object: nil)
+          
+      }
+      
+      func showBubble(optionalView: JLConsoleOptionalView) {
+          self.floatingViewController.dismiss(animated: true, completion: nil)
+          self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
+          self.style = .Bubble
+      }
+}
+
+extension JLConsoleController: BubbleViewControllerDelegate {
+    func dismissBubble(bubble: JLBubbleViewController) {
+        self.bubbleViewController.dismiss(animated: true, completion: nil)
+        self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
+        self.style = .Floating
     }
 }
 

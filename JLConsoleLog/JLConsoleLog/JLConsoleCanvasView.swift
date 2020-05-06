@@ -10,7 +10,7 @@ import UIKit
 
 private let searchBarHeight:CGFloat = 40.0
 
-class JLConsoleCanvasView: UIView, UISearchBarDelegate {
+class JLConsoleCanvasView: UIView {
 
     // MARK: - property
     lazy private var canvasScrollView: UIScrollView = {
@@ -77,7 +77,12 @@ class JLConsoleCanvasView: UIView, UISearchBarDelegate {
         }
     }
     
-    // MARK: - UISearchBarDelegate
+    
+    
+}
+
+//UISearchBarDelegate
+extension JLConsoleCanvasView: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let charSet = CharacterSet.whitespacesAndNewlines
         var keywords:Set<String> = Set<String>()

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC40F8F12460724900CC258A /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40F8F02460724900CC258A /* CPUMonitor.swift */; };
+		CCA629122462AAF3004D8A57 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */; };
+		CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */; };
 		CCAD67342457E3CA00E5D141 /* JLConsoleLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */; };
 		CCAD67392457E3CA00E5D141 /* JLConsoleLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67382457E3CA00E5D141 /* JLConsoleLogTests.swift */; };
 		CCAD673B2457E3CA00E5D141 /* JLConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC40F8F02460724900CC258A /* CPUMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
+		CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMonitor.swift; sourceTree = "<group>"; };
+		CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
 		CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JLConsoleLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLConsoleLog.h; sourceTree = "<group>"; };
 		CCAD672E2457E3CA00E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC40F8EF2460724800CC258A /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				CC40F8F02460724900CC258A /* CPUMonitor.swift */,
+				CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */,
+				CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
 		CCAD67202457E3CA00E5D141 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +113,7 @@
 		CCAD672C2457E3CA00E5D141 /* JLConsoleLog */ = {
 			isa = PBXGroup;
 			children = (
+				CC40F8EF2460724800CC258A /* Performance */,
 				CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */,
 				CCAD67472457E40A00E5D141 /* DispatchMainSafe.swift */,
 				CCAD67462457E40A00E5D141 /* JLConsoleCanvasView.swift */,
@@ -238,14 +255,17 @@
 				CCAD67582457E40A00E5D141 /* JLConsoleOptionalView.swift in Sources */,
 				CCAD67512457E40A00E5D141 /* JLConsoleFilterViewController.swift in Sources */,
 				CCAD67562457E40A00E5D141 /* JLConsoleLogManager.swift in Sources */,
+				CCA629122462AAF3004D8A57 /* MemoryMonitor.swift in Sources */,
 				CCAD67542457E40A00E5D141 /* JLConsoleLog.swift in Sources */,
 				CCAD67532457E40A00E5D141 /* DispatchMainSafe.swift in Sources */,
 				CCAD67552457E40A00E5D141 /* JLConsoleController.swift in Sources */,
 				CCAD67592457E40A00E5D141 /* JLConsoleViewController.swift in Sources */,
+				CC40F8F12460724900CC258A /* CPUMonitor.swift in Sources */,
 				CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */,
 				CCAD67502457E40A00E5D141 /* JLConsoleLogDetailViewController.swift in Sources */,
 				CCAD675B2457E40A00E5D141 /* JLConsoleFloatingViewController.swift in Sources */,
 				CCAD67572457E40A00E5D141 /* JLConsoleLogModel.swift in Sources */,
+				CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */,
 				CCAD67522457E40A00E5D141 /* JLConsoleCanvasView.swift in Sources */,
 				CCAD675A2457E40A00E5D141 /* JLConsoleLogTableView.swift in Sources */,
 			);

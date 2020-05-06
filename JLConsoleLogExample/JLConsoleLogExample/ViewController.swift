@@ -45,6 +45,13 @@ class ViewController: UIViewController {
         nextPageButton.addTarget(self, action: #selector(gotoNextPage(button:)), for: .touchUpInside)
         self.view.addSubview(nextPageButton)
         
+        let controlMonitorButton = UIButton(frame: CGRect(x: 100, y: 500, width: 200, height: 40))
+        controlMonitorButton.setTitle("open monitor", for: .normal)
+        controlMonitorButton.setTitleColor(.systemPink, for: .normal)
+        controlMonitorButton.backgroundColor = .blue
+        controlMonitorButton.addTarget(self, action: #selector(controlMonitor(button:)), for: .touchUpInside)
+        self.view.addSubview(controlMonitorButton)
+        
         
         if #available(iOS 10.0, *) {
             let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
@@ -93,6 +100,16 @@ class ViewController: UIViewController {
     @objc func gotoNextPage(button:UIButton) {
         let vc = SecondaryViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func controlMonitor(button:UIButton) {
+        if JLConsoleController.shared.performanceMonitable {
+            JLConsoleController.shared.performanceMonitable = false
+            button.setTitle("turn on monitor", for: .normal)
+        } else {
+            JLConsoleController.shared.performanceMonitable = true
+             button.setTitle("turn off monitor", for: .normal)
+        }
     }
 }
 
