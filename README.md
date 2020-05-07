@@ -76,3 +76,6 @@ The git address is <https://github.com/jacklandrin/JLConsoleLog>
 * iOS 12
 * Swift 5.2
 * Xcode 11
+
+## Reference
+[PerformanceMonitor](https://github.com/woshiccm/PerformanceMonitor)
