@@ -1,7 +1,7 @@
 # JLConsoleLog
 
 ## What is JLConsoleLog?
-**JLConsoleLog** is an awesome In-App tool to help swift developer log information in both development and production environment. You won't miss any key and useful logs about the bugs in non-debug mode. You also can integrate it in your project's backdoor toolkit, it will help you solve vital issues.
+**JLConsoleLog** is an awesome tool In-App to help swift developer log information in both development and production environment. You won't miss any key and useful logs about the bugs in non-debug mode. You also can integrate it in your project's backdoor toolkit, it will help you solve vital issues.
 
 ## How to operate it?
 JLConsoleLog supports three types of style (display mode) -- **Floating**, **Bubble** and **FullScreen**
@@ -14,11 +14,16 @@ JLConsoleLog supports three types of style (display mode) -- **Floating**, **Bub
 
 There are four buttons on the option view of floating mode. The first button is setting button where you can clear all logs from this console, filter categories and levels. The second one is for switching between floating and fullscreen mode. If the third one is pressed, the console will be a translucent bubble that only displays warning and error count. The last one is close button. 
 
-The floating console could become translucent automatically after 5s, if you don't touch it. Additional, you can drag floating console and bubble to anywhere to avoid disturb you.
+The floating console could become translucent automatically after 5s, if you don't touch it. Additionally, you can drag floating console and bubble to anywhere to avoid disturb you.
 
 While you tap a log cell, you can enter the detail page of log. 
 
 ![](http://www.jacklandrin.com/wp-content/uploads/2020/04/IMG_4734.png)
+
+---
+Performance monitor is a new function. You can invoke a monitor chart from bubble button now.
+
+![](http://www.jacklandrin.com/wp-content/uploads/2020/05/IMG_4762.png)
 
 ## How to use it in your project?
 The **JLConsoleController** is the console's controller opened for developers. It contains a shared instance. You could set **style** and **logEnabled** via it. While you set its style (display mode), the console will immediately show in terms of you given. Like this:
@@ -64,12 +69,19 @@ The parameters, **formats**, is variadic parameters of String. The **first value
 
 If **needPrint** equals true, the log information will print in your Xcode console in Debug environment.
 
-Otherwise, JLConsoleController provides a **followingAction** to operate other actions when you finish logging. For example, you can send a track point log to statistics server such as *Umeng* in followingAction closure. Meanwhile, please don't forget to set **hasFollowingAction** as true while you log.
+Otherwise, JLConsoleController provides a **followingAction** to operate other actions when you finish logging. For example, you can send a track point log to statistics server such as *Firebase* in followingAction closure. Meanwhile, please don't forget to set **hasFollowingAction** as true while you log.
 
 ```
 JLErrorLog(category: SubPageTestLog, hasFollowingAction: true ,needPrint: true, contextData: ["test":5], formats: "Error!",#function,String(#line))
 ```
 This is an error log example.
+
+---
+#### Performance Monitor
+JLConsoleLog provides a performance monitor. You can add these to turn on it.
+```
+JLConsoleController.shared.performanceMonitable = true
+```
 
 The git address is <https://github.com/jacklandrin/JLConsoleLog>
 ## Requirement
