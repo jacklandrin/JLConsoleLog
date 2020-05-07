@@ -9,6 +9,7 @@
 import UIKit
 
 public let ConsoleHasDismissedNotification = NSNotification.Name(rawValue:"ConsoleHasDismissedNotification")
+let InnerLog:JLConsoleLogCategory = "com.consolelog.innerlog"
 
 public enum ConsolePresentationStyle:Int {
     case Hidden = 0
@@ -19,6 +20,12 @@ public enum ConsolePresentationStyle:Int {
 }
 
 public class JLConsoleController: NSObject {
+    
+    enum Constants {
+        static let cpuTimeInterval = 3
+        static let maxCUPUsage: Double = 80
+    }
+    private var cpuTime = 1
     // MARK: - shared instance
     public static let shared = JLConsoleController()
     
@@ -149,9 +156,28 @@ public class JLConsoleController: NSObject {
         return vc
     }()
     
+    // MARK: - public functions
     public func register(newCategory:JLConsoleLogCategory) {
         self.allCategories.insert(newCategory)
-        
+    }
+    
+    public override init() {
+        super.init()
+        JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: PerformanceMonitorNotification, object: nil, queue: .main, using: {[weak self] notification in
+            guard let strongSelf = self else { return }
+            let currentPerformance:[PerformanceMonitor.monitorType:String] = notification.object as! [PerformanceMonitor.monitorType : String]
+           
+            let cpuText:String! = currentPerformance[.cpu] ?? "0"
+            let cpuDouble:Double = (cpuText as NSString).doubleValue
+            strongSelf.cpuTime += 1
+            
+            if strongSelf.cpuTime > Constants.cpuTimeInterval {
+                if cpuDouble > Constants.maxCUPUsage {
+                    JLWarningLog(category: InnerLog, contextData: ["cpu":cpuDouble], formats: "high cpu usage:\(cpuDouble)%")
+                }
+                strongSelf.cpuTime = 1
+            }
+        })
     }
     
     

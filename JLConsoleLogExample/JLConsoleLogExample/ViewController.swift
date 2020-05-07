@@ -54,10 +54,11 @@ class ViewController: UIViewController {
         
         
         if #available(iOS 10.0, *) {
-            let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
+            let timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true, block: { _ in
                 JLVerboseLog(category: TestLog, needPrint: true , contextData: ["test":1], formats: String(self.count), #function,String(#line))
                 self.count += 1
             })
+            RunLoop.main.add(timer, forMode: .common)
         }
         
         JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: ConsoleHasDismissedNotification, object: nil, queue: .main, using: { _ in

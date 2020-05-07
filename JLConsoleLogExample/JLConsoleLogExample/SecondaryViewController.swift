@@ -13,6 +13,10 @@ let SubPageTestLog:JLConsoleLogCategory = "com.consolelog.mybusiness"
 
 class SecondaryViewController: UIViewController {
 
+    var highCPUSwitch:Bool = false
+    var cpuThread:Thread?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -38,10 +42,24 @@ class SecondaryViewController: UIViewController {
         errorButton.backgroundColor = .blue
         errorButton.addTarget(self, action: #selector(addErrorLog(button:)), for: .touchUpInside)
         self.view.addSubview(errorButton)
+    
+        let highCPUButton = UIButton(frame: CGRect(x: 100, y: 500, width: 200, height: 40))
+        highCPUButton.setTitle("high cpu", for: .normal)
+        highCPUButton.setTitleColor(.purple, for: .normal)
+        highCPUButton.backgroundColor = .green
+        highCPUButton.addTarget(self, action: #selector(highCPU(button:)), for: .touchUpInside)
+        self.view.addSubview(highCPUButton)
+        
         
         JLConsoleController.shared.register(newCategory: SubPageTestLog)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        highCPUSwitch = false
+        cpuThread?.cancel()
+        cpuThread = nil
+    }
 
     @objc func addInfoLog(button:UIButton) {
         JLInfoLog(category: SubPageTestLog, contextData: ["test":3], formats: "some info...",#function,String(#line))
@@ -55,4 +73,31 @@ class SecondaryViewController: UIViewController {
     @objc func addErrorLog(button:UIButton) {
         JLErrorLog(category: SubPageTestLog, hasFollowingAction: true ,needPrint: true, contextData: ["test":5], formats: "Error!",#function,String(#line))
     }
+    
+    @objc func highCPU(button:UIButton) {
+        if highCPUSwitch {
+            highCPUSwitch = false
+            cpuThread?.cancel()
+            cpuThread = nil
+            
+            button.setTitle("high cpu", for: .normal)
+        } else {
+            highCPUSwitch = true
+            cpuThread = Thread(target: self, selector: #selector(highCPUOperation), object: nil)
+            cpuThread?.name = "HighCPUThread"
+            cpuThread?.start()
+            button.setTitle("low cpu", for: .normal)
+        }
+    }
+    
+    @objc func highCPUOperation() {
+        while true {
+            if Thread.current.isCancelled {
+                Thread.exit()
+            }
+        }
+    }
+    
+    
+    
 }
