@@ -16,9 +16,6 @@ enum BubbleOnEdge: Int {
     case left = 0, top, right, bottom
 }
 
-//let BubbleEdge:CGFloat = 128
-//let SmallBubbleEdge:CGFloat = 64
-
 var BubbleEdge:CGFloat {
     JLConsoleController.shared.performanceMonitable ? 134 : 64
 }
@@ -81,7 +78,7 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         self.view.addSubview(memoryLabel)
         self.view.addSubview(invisableButton)
         
-        let gesture = UIPanBubbleGestureRecognizer(target: self, action: #selector(panGesture(panGesture:)))
+        let gesture = JLPanNavigationGestureRecognizer(target: self, action: #selector(panGesture(panGesture:)))
         self.view.addGestureRecognizer(gesture)
         
         JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: WarningCountChangeNotification, object: nil, queue: .main, using: { _ in
@@ -171,6 +168,7 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
         cpuLabel.isHidden = !JLConsoleController.shared.performanceMonitable
         memoryLabel.isHidden = !JLConsoleController.shared.performanceMonitable
         self.view.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y, width: BubbleEdge, height: BubbleEdge)
+        invisableButton.frame = CGRect(x: 0, y: 0, width: BubbleEdge, height: BubbleEdge)
     }
     
     // MARK: - private function
@@ -198,7 +196,7 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
     }
     
     // MARK: - selector
-    @objc func panGesture(panGesture:UIPanBubbleGestureRecognizer) {
+    @objc func panGesture(panGesture:JLPanNavigationGestureRecognizer) {
         let state = panGesture.state
            
             switch state {
@@ -230,103 +228,103 @@ class JLBubbleViewController: UIViewController, JLConsoleViewControllerProvider 
 }
 
 
-class UIPanBubbleGestureRecognizer: UIGestureRecognizer {
-    // MARK: - property
-    private var touch:UITouch?
-    private var startPoint:CGPoint = .zero
-    private var currentPoint:CGPoint = .zero
-    private var lastUpdateTime:TimeInterval = 0
-    // MARK: - public function
-    public func translationView(view:UIView?) -> CGPoint {
-        guard let _ = view else {
-            return .zero
-        }
-        
-        guard let currentView = self.view else {
-            return .zero
-        }
-        let start = currentView.convert(startPoint, to: view)
-        let now = currentView.convert(currentPoint, to: view)
-        return CGPoint(x: now.x - start.x, y: now.y - start.y)
-    }
-    // MARK: - private function
-    private func setTouch(aTouch:UITouch?) {
-        if touch != aTouch {
-            touch = aTouch
-        }
-    }
-    // MARK: - override
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesBegan(touches, with: event)
-        
-
-        
-        startPoint = .zero
-        currentPoint = .zero
-        
-        let aTouch = touches.first
-        guard let touch = aTouch else {
-            return
-        }
-        setTouch(aTouch: touch)
-        startPoint = touch.location(in: self.view)
-        currentPoint = startPoint
-        self.state = .possible
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesMoved(touches, with: event)
-        guard let aTouch = touch, touches.contains(aTouch) else {
-            return
-        }
-        
-        currentPoint = aTouch.location(in: self.view)
-        if self.state == .possible {
-            let x = currentPoint.x - startPoint.y
-            let y = abs(currentPoint.y - startPoint.y)
-            if x > 5 && x / y > 2 {
-                self.state = .began
-                return
-            }
-        }
-        
-        if self.state == .began || self.state == .changed {
-            self.state = .changed
-        }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesEnded(touches, with: event)
-        guard let aTouch = touch, touches.contains(aTouch) else {
-            return
-        }
-        setTouch(aTouch: nil)
-        switch self.state {
-        case .began, .changed:
-            self.state = .recognized
-        case .possible:
-            self.state = .failed
-        default:
-            break
-        }
-        
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) {
-        super.touchesCancelled(touches, with: event)
-        
-        guard let aTouch = touch, touches.contains(aTouch) else {
-            return
-        }
-        setTouch(aTouch: nil)
-        switch self.state {
-        case .began, .changed:
-            self.state = .recognized
-        case .possible:
-            self.state = .cancelled
-        default:
-            break
-        }
-    }
-    
-}
+//class JLPanBubbleGestureRecognizer: UIGestureRecognizer {
+//    // MARK: - property
+//    private var touch:UITouch?
+//    private var startPoint:CGPoint = .zero
+//    private var currentPoint:CGPoint = .zero
+//    private var lastUpdateTime:TimeInterval = 0
+//    // MARK: - public function
+//    public func translationView(view:UIView?) -> CGPoint {
+//        guard let _ = view else {
+//            return .zero
+//        }
+//
+//        guard let currentView = self.view else {
+//            return .zero
+//        }
+//        let start = currentView.convert(startPoint, to: view)
+//        let now = currentView.convert(currentPoint, to: view)
+//        return CGPoint(x: now.x - start.x, y: now.y - start.y)
+//    }
+//    // MARK: - private function
+//    private func setTouch(aTouch:UITouch?) {
+//        if touch != aTouch {
+//            touch = aTouch
+//        }
+//    }
+//    // MARK: - override
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesBegan(touches, with: event)
+//
+//
+//
+//        startPoint = .zero
+//        currentPoint = .zero
+//
+//        let aTouch = touches.first
+//        guard let touch = aTouch else {
+//            return
+//        }
+//        setTouch(aTouch: touch)
+//        startPoint = touch.location(in: self.view)
+//        currentPoint = startPoint
+//        self.state = .possible
+//    }
+//
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesMoved(touches, with: event)
+//        guard let aTouch = touch, touches.contains(aTouch) else {
+//            return
+//        }
+//
+//        currentPoint = aTouch.location(in: self.view)
+//        if self.state == .possible {
+//            let x = currentPoint.x - startPoint.y
+//            let y = abs(currentPoint.y - startPoint.y)
+//            if x > 5 && x / y > 2 {
+//                self.state = .began
+//                return
+//            }
+//        }
+//
+//        if self.state == .began || self.state == .changed {
+//            self.state = .changed
+//        }
+//    }
+//
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesEnded(touches, with: event)
+//        guard let aTouch = touch, touches.contains(aTouch) else {
+//            return
+//        }
+//        setTouch(aTouch: nil)
+//        switch self.state {
+//        case .began, .changed:
+//            self.state = .recognized
+//        case .possible:
+//            self.state = .failed
+//        default:
+//            break
+//        }
+//
+//    }
+//
+//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent) {
+//        super.touchesCancelled(touches, with: event)
+//
+//        guard let aTouch = touch, touches.contains(aTouch) else {
+//            return
+//        }
+//        setTouch(aTouch: nil)
+//        switch self.state {
+//        case .began, .changed:
+//            self.state = .recognized
+//        case .possible:
+//            self.state = .cancelled
+//        default:
+//            break
+//        }
+//    }
+//
+//}

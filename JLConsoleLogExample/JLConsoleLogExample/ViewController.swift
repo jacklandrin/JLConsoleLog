@@ -47,8 +47,8 @@ class ViewController: UIViewController {
         
         let controlMonitorButton = UIButton(frame: CGRect(x: 100, y: 500, width: 200, height: 40))
         controlMonitorButton.setTitle("open monitor", for: .normal)
-        controlMonitorButton.setTitleColor(.systemPink, for: .normal)
-        controlMonitorButton.backgroundColor = .blue
+        controlMonitorButton.setTitleColor(.yellow, for: .normal)
+        controlMonitorButton.backgroundColor = .gray
         controlMonitorButton.addTarget(self, action: #selector(controlMonitor(button:)), for: .touchUpInside)
         self.view.addSubview(controlMonitorButton)
         

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CC40F8F12460724900CC258A /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40F8F02460724900CC258A /* CPUMonitor.swift */; };
+		CC4CCFB62464368700E49829 /* CardiogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB52464368700E49829 /* CardiogramView.swift */; };
+		CC4CCFB82464391600E49829 /* JLPanNavigationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */; };
+		CC4CCFBA24643F2600E49829 /* JLMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */; };
 		CCA629122462AAF3004D8A57 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */; };
 		CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */; };
 		CCAD67342457E3CA00E5D141 /* JLConsoleLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		CC40F8F02460724900CC258A /* CPUMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
+		CC4CCFB52464368700E49829 /* CardiogramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiogramView.swift; sourceTree = "<group>"; };
+		CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLPanNavigationGestureRecognizer.swift; sourceTree = "<group>"; };
+		CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLMonitorViewController.swift; sourceTree = "<group>"; };
 		CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMonitor.swift; sourceTree = "<group>"; };
 		CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
 		CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JLConsoleLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +98,25 @@
 			path = Performance;
 			sourceTree = "<group>";
 		};
+		CC4CCFB42464368700E49829 /* CardiogramView */ = {
+			isa = PBXGroup;
+			children = (
+				CC4CCFB52464368700E49829 /* CardiogramView.swift */,
+			);
+			path = CardiogramView;
+			sourceTree = "<group>";
+		};
+		CC4CCFBB246441A600E49829 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD674F2457E40A00E5D141 /* JLConsoleFloatingViewController.swift */,
+				CCAD674D2457E40A00E5D141 /* JLConsoleViewController.swift */,
+				CCAD675E245809C500E5D141 /* JLBubbleViewController.swift */,
+				CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CCAD67202457E3CA00E5D141 = {
 			isa = PBXGroup;
 			children = (
@@ -113,15 +138,15 @@
 		CCAD672C2457E3CA00E5D141 /* JLConsoleLog */ = {
 			isa = PBXGroup;
 			children = (
+				CC4CCFBB246441A600E49829 /* ViewController */,
+				CC4CCFB42464368700E49829 /* CardiogramView */,
 				CC40F8EF2460724800CC258A /* Performance */,
 				CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */,
+				CCAD67492457E40A00E5D141 /* JLConsoleController.swift */,
 				CCAD67472457E40A00E5D141 /* DispatchMainSafe.swift */,
 				CCAD67462457E40A00E5D141 /* JLConsoleCanvasView.swift */,
-				CCAD67492457E40A00E5D141 /* JLConsoleController.swift */,
 				CCAD67452457E40A00E5D141 /* JLConsoleFilterViewController.swift */,
-				CCAD674D2457E40A00E5D141 /* JLConsoleViewController.swift */,
-				CCAD674F2457E40A00E5D141 /* JLConsoleFloatingViewController.swift */,
-				CCAD675E245809C500E5D141 /* JLBubbleViewController.swift */,
+				CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */,
 				CCAD67482457E40A00E5D141 /* JLConsoleLog.swift */,
 				CCAD67442457E40900E5D141 /* JLConsoleLogDetailViewController.swift */,
 				CCAD674A2457E40A00E5D141 /* JLConsoleLogManager.swift */,
@@ -257,9 +282,11 @@
 				CCAD67562457E40A00E5D141 /* JLConsoleLogManager.swift in Sources */,
 				CCA629122462AAF3004D8A57 /* MemoryMonitor.swift in Sources */,
 				CCAD67542457E40A00E5D141 /* JLConsoleLog.swift in Sources */,
+				CC4CCFB62464368700E49829 /* CardiogramView.swift in Sources */,
 				CCAD67532457E40A00E5D141 /* DispatchMainSafe.swift in Sources */,
 				CCAD67552457E40A00E5D141 /* JLConsoleController.swift in Sources */,
 				CCAD67592457E40A00E5D141 /* JLConsoleViewController.swift in Sources */,
+				CC4CCFB82464391600E49829 /* JLPanNavigationGestureRecognizer.swift in Sources */,
 				CC40F8F12460724900CC258A /* CPUMonitor.swift in Sources */,
 				CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */,
 				CCAD67502457E40A00E5D141 /* JLConsoleLogDetailViewController.swift in Sources */,
@@ -268,6 +295,7 @@
 				CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */,
 				CCAD67522457E40A00E5D141 /* JLConsoleCanvasView.swift in Sources */,
 				CCAD675A2457E40A00E5D141 /* JLConsoleLogTableView.swift in Sources */,
+				CC4CCFBA24643F2600E49829 /* JLMonitorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,6 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLog;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

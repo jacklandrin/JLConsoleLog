@@ -9,11 +9,11 @@
 import UIKit
 
 protocol OptionalViewDelegate: NSObject {
-    func clickSettingButton(optionalView:JLConsoleOptionalView)
+    func tapSettingButton(optionalView:JLConsoleOptionalView)
     func shouldEnterFullScreen(optionalView:JLConsoleOptionalView) -> Bool
     func shouldExitFullScreen(optionalView:JLConsoleOptionalView) -> Bool
-    func showBubble(optionalView:JLConsoleOptionalView)
-    func clickCloseButton(optionalView:JLConsoleOptionalView)
+    func tapBubbleButton(optionalView:JLConsoleOptionalView)
+    func tapCloseButton(optionalView:JLConsoleOptionalView)
 }
 
 class JLConsoleOptionalView: UIView {
@@ -89,7 +89,7 @@ class JLConsoleOptionalView: UIView {
             return
         }
         
-        delegate.clickSettingButton(optionalView: self)
+        delegate.tapSettingButton(optionalView: self)
     }
     
     @objc func fullScreenButtonClick(button: UIButton) {
@@ -115,14 +115,14 @@ class JLConsoleOptionalView: UIView {
             return
         }
         
-        delegate.clickCloseButton(optionalView: self)
+        delegate.tapCloseButton(optionalView: self)
     }
     
     @objc func bubbleButtonClick(button:UIButton) {
         guard let delegate = self.delegate else {
             return
         }
-        delegate.showBubble(optionalView: self)
+        delegate.tapBubbleButton(optionalView: self)
     }
     
     // MARK: - function

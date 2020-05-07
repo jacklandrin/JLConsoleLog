@@ -15,6 +15,7 @@ public enum ConsolePresentationStyle:Int {
     case FullScreen
     case Floating
     case Bubble
+    case MonitorChart
 }
 
 public class JLConsoleController: NSObject {
@@ -32,6 +33,8 @@ public class JLConsoleController: NSObject {
                 self.fullScreenViewController.presentInWindow(window: self.floatingWindow, animated: true)
             case .Bubble:
                 self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
+            case .MonitorChart:
+                self.monitorViewController.presentInWindow(window: self.floatingWindow, animated: true)
             case .Hidden:
                 self.floatingWindow?.isHidden = true
             }
@@ -140,9 +143,11 @@ public class JLConsoleController: NSObject {
         return vc
     }()
     
-    public override init() {
-        
-    }
+    lazy private var monitorViewController:JLMonitorViewController = {
+        let vc = JLMonitorViewController()
+        vc.delegate = self
+        return vc
+    }()
     
     public func register(newCategory:JLConsoleLogCategory) {
         self.allCategories.insert(newCategory)
@@ -164,7 +169,7 @@ public class JLConsoleController: NSObject {
 
 
 extension JLConsoleController: OptionalViewDelegate {
-    func clickSettingButton(optionalView: JLConsoleOptionalView) {
+    func tapSettingButton(optionalView: JLConsoleOptionalView) {
           let alertController = UIAlertController(title: "setting", message: nil, preferredStyle: .actionSheet)
           let cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: {_ in
               self.alertWindow?.isHidden = true
@@ -190,13 +195,7 @@ extension JLConsoleController: OptionalViewDelegate {
           alertController.addAction(cleanAllLogAction)
           
 
-          let vc = UIViewController()
-          vc.view.backgroundColor = .clear
-          self.alertWindow?.rootViewController = vc
-          self.alertWindow?.makeKeyAndVisible()
-          vc.present(alertController, animated: true, completion: nil)
-          self.floatingWindow?.makeKeyAndVisible()
-          self.originalKeyWindow.makeKey()
+          showAlertController(alertController)
       }
       
       func shouldEnterFullScreen(optionalView: JLConsoleOptionalView) -> Bool {
@@ -213,7 +212,7 @@ extension JLConsoleController: OptionalViewDelegate {
           return true
       }
       
-      func clickCloseButton(optionalView: JLConsoleOptionalView) {
+      func tapCloseButton(optionalView: JLConsoleOptionalView) {
           if optionalView == self.floatingViewController.optionalView {
               self.floatingViewController.dismiss(animated: true, completion: { [weak self] in
                   guard let strongSelf = self else { return }
@@ -229,16 +228,66 @@ extension JLConsoleController: OptionalViewDelegate {
           
       }
       
-      func showBubble(optionalView: JLConsoleOptionalView) {
-          self.floatingViewController.dismiss(animated: true, completion: nil)
-          self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
-          self.style = .Bubble
-      }
+      func tapBubbleButton(optionalView: JLConsoleOptionalView) {
+        let alertController = UIAlertController(title: "other window", message: nil, preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: {_ in
+            self.alertWindow?.isHidden = true
+        })
+        let bubbleAction = UIAlertAction(title: "show bubble", style: .default, handler: { _ in
+            self.floatingViewController.dismiss(animated: true, completion: nil)
+            self.bubbleViewController.presentInWindow(window: self.floatingWindow, animated: true)
+            self.style = .Bubble
+            self.alertWindow?.isHidden = true
+        })
+        
+        let cpuAction = UIAlertAction(title: "show cpu monitor", style: .default, handler: { _ in
+            self.floatingViewController.dismiss(animated: true, completion: nil)
+            self.monitorViewController.presentInWindow(window: self.floatingWindow, animated: true)
+            self.monitorViewController.monitorType = .cpu
+            self.style = .MonitorChart
+            self.alertWindow?.isHidden = true
+        })
+        
+        let memoryAction = UIAlertAction(title: "show memory monitor", style: .default, handler: { _ in
+            self.floatingViewController.dismiss(animated: true, completion: nil)
+            self.monitorViewController.presentInWindow(window: self.floatingWindow, animated: true)
+            self.monitorViewController.monitorType = .memory
+            self.style = .MonitorChart
+            self.alertWindow?.isHidden = true
+        })
+        
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(bubbleAction)
+        alertController.addAction(cpuAction)
+        alertController.addAction(memoryAction)
+        
+        
+        showAlertController(alertController)
+    }
+    
+    func showAlertController(_ alertController:UIAlertController) {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .clear
+        self.alertWindow?.rootViewController = vc
+        self.alertWindow?.makeKeyAndVisible()
+        vc.present(alertController, animated: true, completion: nil)
+        self.floatingWindow?.makeKeyAndVisible()
+        self.originalKeyWindow.makeKey()
+    }
 }
 
 extension JLConsoleController: BubbleViewControllerDelegate {
     func dismissBubble(bubble: JLBubbleViewController) {
         self.bubbleViewController.dismiss(animated: true, completion: nil)
+        self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
+        self.style = .Floating
+    }
+}
+
+extension JLConsoleController: MonitorViewControllerDelegate {
+    func dismissMonitor(bubble: JLMonitorViewController) {
+        self.monitorViewController.dismiss(animated: true, completion: nil)
         self.floatingViewController.presentInWindow(window: self.floatingWindow, animated: true)
         self.style = .Floating
     }
