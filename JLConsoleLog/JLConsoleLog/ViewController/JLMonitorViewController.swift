@@ -36,7 +36,10 @@ class JLMonitorViewController: UIViewController,JLConsoleViewControllerProvider 
             case .memory:
                 cardiogram.yAxisUnit = "memory MB"
                 titleLabel.text = "Memory Monitor"
-                break
+            case .fps:
+                cardiogram.yAxisUnit = "fps"
+                cardiogram.maxValue = 140.0
+                titleLabel.text = "FPS Monitor"
             }
         }
     }
@@ -95,6 +98,10 @@ class JLMonitorViewController: UIViewController,JLConsoleViewControllerProvider 
                     let memoryText:String! = currentPerformance[.memory] ?? "0"
                     let memoryDouble:Double = (memoryText as NSString).doubleValue
                     strongSelf.cardiogram.update(newPoint: memoryDouble)
+                case .fps:
+                    let fpsText:String! = currentPerformance[.fps] ?? "0"
+                    let fpsDouble:Double = (fpsText as NSString).doubleValue
+                    strongSelf.cardiogram.update(newPoint: fpsDouble)
             }
             
         })

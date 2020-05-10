@@ -14,7 +14,7 @@ public class PerformanceMonitor {
    
 
     public enum monitorType {
-        case cpu, memory
+        case cpu, memory, fps
     }
     
     
@@ -24,20 +24,28 @@ public class PerformanceMonitor {
         public let rawValue: Int
         public static let cpu = DisplayOptions(rawValue: 1 << 0)
         public static let memory = DisplayOptions(rawValue: 1 << 1)
-        public static let all: DisplayOptions = [.cpu, .memory]
+        public static let fps = DisplayOptions(rawValue: 1 << 2)
+        public static let all: DisplayOptions = [.cpu, .memory, .fps]
         public init(rawValue:Int) {
             self.rawValue = rawValue
         }
     }
     
     private var displayOptions: DisplayOptions = .all
+    private var fpsMonitor:FPSMonitor?
+    private var currentFPS:Double = 0.0
     
     public init(displayOptions: DisplayOptions = .all){
         self.displayOptions = displayOptions
+        if displayOptions.contains(.fps) {
+            fpsMonitor = FPSMonitor()
+            fpsMonitor?.delegate = self
+        }
     }
     
     
     public func start() {
+        fpsMonitor?.start()
         monitoringTimer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.global())
         monitoringTimer?.schedule(deadline: .now(), repeating: 1)
         monitoringTimer?.setEventHandler(handler:{ [weak self] in
@@ -53,6 +61,11 @@ public class PerformanceMonitor {
                     monitorReslut[.memory] = memoryStr
                 }
                 
+                if strongSelf.displayOptions.contains(.fps) {
+                    let fpsStr = String(format: "%.1f", strongSelf.currentFPS)
+                    monitorReslut[.fps] = fpsStr
+                }
+                
                 JLConsoleLogManager.consoleLogNotificationCenter.post(name: PerformanceMonitorNotification, object: monitorReslut)
             }
         })
@@ -62,17 +75,29 @@ public class PerformanceMonitor {
     
     public func stop() {
         monitoringTimer?.cancel()
+        fpsMonitor?.stop()
     }
     
     public func pause() {
         monitoringTimer?.suspend()
+        fpsMonitor?.stop()
     }
     
     public func resume() {
         monitoringTimer?.resume()
+        fpsMonitor?.start()
     }
     
     deinit {
         monitoringTimer?.cancel()
+    }
+}
+
+extension PerformanceMonitor: FPSMonitorDelegate {
+
+    public func fpsMonitor(with monitor: FPSMonitor, fps: Double) {
+        DispatchQueue.main.async {
+            self.currentFPS = fps
+        }
     }
 }

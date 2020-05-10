@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC40F8F12460724900CC258A /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40F8F02460724900CC258A /* CPUMonitor.swift */; };
+		CC424F842467FA4E0026058B /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC424F832467FA4D0026058B /* FPSMonitor.swift */; };
 		CC4CCFB62464368700E49829 /* CardiogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB52464368700E49829 /* CardiogramView.swift */; };
 		CC4CCFB82464391600E49829 /* JLPanNavigationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */; };
 		CC4CCFBA24643F2600E49829 /* JLMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		CC40F8F02460724900CC258A /* CPUMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
+		CC424F832467FA4D0026058B /* FPSMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
 		CC4CCFB52464368700E49829 /* CardiogramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardiogramView.swift; sourceTree = "<group>"; };
 		CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLPanNavigationGestureRecognizer.swift; sourceTree = "<group>"; };
 		CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLMonitorViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		CC40F8EF2460724800CC258A /* Performance */ = {
 			isa = PBXGroup;
 			children = (
+				CC424F832467FA4D0026058B /* FPSMonitor.swift */,
 				CC40F8F02460724900CC258A /* CPUMonitor.swift */,
 				CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */,
 				CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC424F842467FA4E0026058B /* FPSMonitor.swift in Sources */,
 				CCAD67582457E40A00E5D141 /* JLConsoleOptionalView.swift in Sources */,
 				CCAD67512457E40A00E5D141 /* JLConsoleFilterViewController.swift in Sources */,
 				CCAD67562457E40A00E5D141 /* JLConsoleLogManager.swift in Sources */,

@@ -282,11 +282,20 @@ extension JLConsoleController: OptionalViewDelegate {
             self.alertWindow?.isHidden = true
         })
         
+        let fpsAction = UIAlertAction(title: "show fps monitor", style: .default, handler: { _ in
+            self.floatingViewController.dismiss(animated: true, completion: nil)
+            self.monitorViewController.presentInWindow(window: self.floatingWindow, animated: true)
+            self.monitorViewController.monitorType = .fps
+            self.style = .MonitorChart
+            self.alertWindow?.isHidden = true
+        })
+        
         
         alertController.addAction(cancelAction)
         alertController.addAction(bubbleAction)
         alertController.addAction(cpuAction)
         alertController.addAction(memoryAction)
+        alertController.addAction(fpsAction)
         
         
         showAlertController(alertController)

@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_JLConsoleLogExample_JLConsoleLogExampleUITests : NSObject
-@end
-@implementation PodsDummy_Pods_JLConsoleLogExample_JLConsoleLogExampleUITests
-@end

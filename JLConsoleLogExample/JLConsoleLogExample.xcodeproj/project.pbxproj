@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		571DC98B2B08DB994D1E2ABD /* Pods_JLConsoleLogExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */; };
-		8A8EE5FEB4A231BEF3DAA744 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A609D04FFAB3870D562844 /* Pods_JLConsoleLogExampleTests.framework */; };
 		CCAD66F12457E34100E5D141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66F02457E34100E5D141 /* AppDelegate.swift */; };
 		CCAD66F32457E34100E5D141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66F22457E34100E5D141 /* SceneDelegate.swift */; };
 		CCAD66F52457E34100E5D141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD66F42457E34100E5D141 /* ViewController.swift */; };
@@ -18,7 +17,6 @@
 		CCAD67082457E34400E5D141 /* JLConsoleLogExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */; };
 		CCAD67132457E34400E5D141 /* JLConsoleLogExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */; };
 		CCAD675D2457E94800E5D141 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */; };
-		D719AEB881F80EFC9AF24E49 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C228327A24F799425A995259 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18A609D04FFAB3870D562844 /* Pods_JLConsoleLogExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		277A8E957DC7FC2F9CC0F6E9 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.release.xcconfig"; sourceTree = "<group>"; };
 		3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.debug.xcconfig"; sourceTree = "<group>"; };
-		5CCFE342FBE6BFF6B50F9F74 /* Pods-JLConsoleLogExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9C5A583C360E2AF34FA6C68 /* Pods-JLConsoleLogExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C228327A24F799425A995259 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLConsoleLogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66F02457E34100E5D141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCAD66F22457E34100E5D141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +55,6 @@
 		CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogExampleUITests.swift; sourceTree = "<group>"; };
 		CCAD67142457E34400E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
-		F2ECC39E267DA3AA38A80A97 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8EE5FEB4A231BEF3DAA744 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D719AEB881F80EFC9AF24E49 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */,
-				C228327A24F799425A995259 /* Pods_JLConsoleLogExample_JLConsoleLogExampleUITests.framework */,
-				18A609D04FFAB3870D562844 /* Pods_JLConsoleLogExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,10 +96,6 @@
 			children = (
 				3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */,
 				317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */,
-				F2ECC39E267DA3AA38A80A97 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig */,
-				277A8E957DC7FC2F9CC0F6E9 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig */,
-				A9C5A583C360E2AF34FA6C68 /* Pods-JLConsoleLogExampleTests.debug.xcconfig */,
-				5CCFE342FBE6BFF6B50F9F74 /* Pods-JLConsoleLogExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,7 +181,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCAD671A2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleTests" */;
 			buildPhases = (
-				8E67B7DF0E3279A91E68C5B3 /* [CP] Check Pods Manifest.lock */,
 				CCAD66FF2457E34400E5D141 /* Sources */,
 				CCAD67002457E34400E5D141 /* Frameworks */,
 				CCAD67012457E34400E5D141 /* Resources */,
@@ -216,11 +199,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCAD671D2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleUITests" */;
 			buildPhases = (
-				29BC9D9F96DAED20660F782B /* [CP] Check Pods Manifest.lock */,
 				CCAD670A2457E34400E5D141 /* Sources */,
 				CCAD670B2457E34400E5D141 /* Frameworks */,
 				CCAD670C2457E34400E5D141 /* Resources */,
-				A540FCE683766E638EE48BF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,28 +284,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29BC9D9F96DAED20660F782B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		67927C44C5EFF44CC7C7E8B7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,45 +299,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E67B7DF0E3279A91E68C5B3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A540FCE683766E638EE48BF4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests/Pods-JLConsoleLogExample-JLConsoleLogExampleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6C57A241E2A46A6A0A2FC64 /* [CP] Check Pods Manifest.lock */ = {
@@ -598,6 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -618,6 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -625,7 +547,6 @@
 		};
 		CCAD671B2457E34400E5D141 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9C5A583C360E2AF34FA6C68 /* Pods-JLConsoleLogExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -648,7 +569,6 @@
 		};
 		CCAD671C2457E34400E5D141 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CCFE342FBE6BFF6B50F9F74 /* Pods-JLConsoleLogExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -671,7 +591,6 @@
 		};
 		CCAD671E2457E34400E5D141 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2ECC39E267DA3AA38A80A97 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -692,7 +611,6 @@
 		};
 		CCAD671F2457E34400E5D141 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 277A8E957DC7FC2F9CC0F6E9 /* Pods-JLConsoleLogExample-JLConsoleLogExampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
