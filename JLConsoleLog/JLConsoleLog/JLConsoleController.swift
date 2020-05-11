@@ -50,6 +50,7 @@ public class JLConsoleController: NSObject {
     
     public internal(set) var logManager = JLConsoleLogManager()
     
+    ///a switch for turn on/off logger
     public var logEnabled: Bool = false
     {
         didSet {
@@ -69,8 +70,10 @@ public class JLConsoleController: NSObject {
         }
     }
     
+    ///a following action after logging
     public var followingAction: ((JLLogOptions) -> Void)?
     
+    ///all categories registerred
     public internal(set) var allCategories:Set<JLConsoleLogCategory> = Set<JLConsoleLogCategory>()
     
     
@@ -166,7 +169,7 @@ public class JLConsoleController: NSObject {
         JLConsoleLogManager.consoleLogNotificationCenter.addObserver(forName: PerformanceMonitorNotification, object: nil, queue: .main, using: {[weak self] notification in
             guard let strongSelf = self else { return }
             let currentPerformance:[PerformanceMonitor.monitorType:String] = notification.object as! [PerformanceMonitor.monitorType : String]
-           
+            
             let cpuText:String! = currentPerformance[.cpu] ?? "0"
             let cpuDouble:Double = (cpuText as NSString).doubleValue
             strongSelf.cpuTime += 1
