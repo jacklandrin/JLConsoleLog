@@ -25,12 +25,27 @@ class SecondaryViewController: UIViewController {
         self.view.backgroundColor = .white
         
         
-        let infoButton = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 40))
+        let infoButton = UIButton(frame: CGRect(x: 100, y: 200, width: 200, height: 40))
         infoButton.setTitle("add an info log", for: .normal)
         infoButton.setTitleColor(.green, for: .normal)
         infoButton.backgroundColor = .purple
         infoButton.addTarget(self, action: #selector(addInfoLog(button:)), for: .touchUpInside)
         self.view.addSubview(infoButton)
+        
+        let noticeButton = UIButton(frame: CGRect(x: 100, y: 250, width: 200, height: 40))
+        noticeButton.setTitle("add an notice log", for: .normal)
+        noticeButton.setTitleColor(.cyan, for: .normal)
+        noticeButton.backgroundColor = .blue
+        noticeButton.addTarget(self, action: #selector(addNoticeLog(button:)), for: .touchUpInside)
+        self.view.addSubview(noticeButton)
+
+        let criticalButton = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 40))
+        criticalButton.setTitle("add an critical log", for: .normal)
+        criticalButton.setTitleColor(.white, for: .normal)
+        criticalButton.backgroundColor = .orange
+        criticalButton.addTarget(self, action: #selector(addCriticalLog(button:)), for: .touchUpInside)
+        self.view.addSubview(criticalButton)
+
         
         let warningButton = UIButton(frame: CGRect(x: 100, y: 350, width: 200, height: 40))
         warningButton.setTitle("add a warning log", for: .normal)
@@ -75,6 +90,13 @@ class SecondaryViewController: UIViewController {
         JLInfoLog(category: SubPageTestLog, contextData: ["test":3], formats: "some info...",#function,String(#line))
     }
 
+    @objc func addNoticeLog(button:UIButton) {
+        JLNoticeLog(category: SubPageTestLog, contextData: ["test":6], formats: "some notice...",#function,String(#line))
+    }
+    
+    @objc func addCriticalLog(button:UIButton) {
+           JLCriticalLog(category: SubPageTestLog, contextData: ["test":7], formats: "some critical...",#function,String(#line))
+       }
     
     @objc func addWarningLog(button:UIButton) {
         JLWarningLog(category: SubPageTestLog, needPrint: true, contextData: ["test":4], formats: "Warning!",#function,String(#line))

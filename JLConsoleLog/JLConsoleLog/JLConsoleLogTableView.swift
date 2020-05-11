@@ -89,9 +89,9 @@ class JLConsoleLogTableView: UITableView, UITableViewDelegate, UITableViewDataSo
         let log = self.dataArray[indexPath.row]
         cell?.textLabel?.text = "[\(log.level.rawValue)] \(log.info)"
         switch log.level {
-        case .Error:
+        case .Error,.Critical:
             cell?.textLabel?.textColor = UIColor.red
-        case .Warning:
+        case .Warning, .Notice:
             cell?.textLabel?.textColor = UIColor.yellow
         default:
             cell?.textLabel?.textColor = UIColor.green

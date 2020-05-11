@@ -12,11 +12,27 @@ import os.log
 public typealias JLConsoleLogCategory = String
 
 
+/// These log levels are supported
 public enum JLConsoleLogLevel: String {
+    /// for verbose information or some logs needed to trace
     case Verbose = "🍔VERBOSE🐌"
+    
+    /// for some information needed to debug
     case Debug = "🔍DEBUG🐞"
+    
+    /// testify programme running as your expection
     case Info = "📔INFO🦄"
+    
+    /// something you should notice
+    case Notice = "📌NOTICE🐍"
+    
+    /// a fatal issue, application can't run in the normal way
+    case Critical = "👎🏻CRITICAL☠️"
+    
+    /// something happens by accident
     case Warning = "⚠️WARNING🙊"
+    
+    /// a serious error happens, some feathers of application can't run
     case Error = "⚡️ERROR🙈"
 }
 
@@ -40,6 +56,10 @@ private func convertLogType(level: JLConsoleLogLevel) -> OSLogType {
         return .debug
     case .Info:
         return .info
+    case .Notice:
+        return .default
+    case .Critical:
+        return .fault
     case .Warning:
         return .default
     case .Error:
@@ -120,6 +140,19 @@ public func JLDebugLog( category: JLConsoleLogCategory, hasFollowingAction:Bool 
     _JLLevelLog(level: .Debug, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
 }
 
+/// convenient function for Notice level
+/// - Parameters:
+///      see JLLevelLog
+public func JLNoticeLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+    _JLLevelLog(level: .Notice, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
+}
+
+/// convenient function for Critical level
+/// - Parameters:
+///      see JLLevelLog
+public func JLCriticalLog( category: JLConsoleLogCategory, hasFollowingAction:Bool = false, needPrint:Bool = false, contextData:Dictionary<String,Any> , formats: String...) {
+    _JLLevelLog(level: .Critical, category: category, hasFollowingAction: hasFollowingAction, needPrint: needPrint, contextData: contextData, formats: formats)
+}
 
 /// register a new category in a set for filterring
 /// - Parameter newCategory: a business category

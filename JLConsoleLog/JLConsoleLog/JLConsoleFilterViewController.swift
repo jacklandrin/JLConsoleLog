@@ -58,7 +58,7 @@ class JLConsoleFilterViewController: UITableViewController {
         case .Category:
             tempArray = Array(JLConsoleController.shared.allCategories)
         case .Level:
-            tempArray = [JLConsoleLogLevel.Verbose.rawValue, JLConsoleLogLevel.Debug.rawValue, JLConsoleLogLevel.Info.rawValue, JLConsoleLogLevel.Warning.rawValue, JLConsoleLogLevel.Error.rawValue]
+            tempArray = [JLConsoleLogLevel.Verbose.rawValue, JLConsoleLogLevel.Debug.rawValue, JLConsoleLogLevel.Info.rawValue,JLConsoleLogLevel.Notice.rawValue, JLConsoleLogLevel.Critical.rawValue, JLConsoleLogLevel.Warning.rawValue, JLConsoleLogLevel.Error.rawValue]
         }
         
         var tempDataArray:[FilterModel] = [FilterModel]()

@@ -79,10 +79,10 @@ public class JLConsoleLogManager: NSObject {
         dispatch_main_async_safe { [weak self] in
             guard let strongSelf = self else { return }
             if strongSelf.allLogArray.count >= AllLogCountLimit {
-                let warningArray = strongSelf.allLogArray[0...AllLogCountLimit / 2].filter{$0.level == .Warning}
+                let warningArray = strongSelf.allLogArray[0...AllLogCountLimit / 2].filter{$0.level == .Warning || $0.level == .Notice}
                 strongSelf.warningCount -= UInt(warningArray.count)
                 
-                let errorArray = strongSelf.allLogArray[0...AllLogCountLimit / 2].filter{$0.level == .Error}
+                let errorArray = strongSelf.allLogArray[0...AllLogCountLimit / 2].filter{$0.level == .Error || $0.level == .Critical}
                 strongSelf.errorCount -= UInt(errorArray.count)
                 
                 strongSelf.allLogArray.removeSubrange(0...AllLogCountLimit / 2)
@@ -97,9 +97,9 @@ public class JLConsoleLogManager: NSObject {
             }
             
             
-            if log.level == .Error {
+            if log.level == .Error || log.level == .Critical {
                 strongSelf.errorCount += 1
-            } else if log.level == .Warning {
+            } else if log.level == .Warning || log.level == .Notice {
                 strongSelf.warningCount += 1
             }
         }
