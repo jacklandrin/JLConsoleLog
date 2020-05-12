@@ -7,34 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EF60D2C79E8E76EC4EE277C6F10A46A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		1E0D67702F63751EDE3B946C08FB2872 /* JLMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F6E681DF7257412C6172B377318C76 /* JLMonitorViewController.swift */; };
-		212511C5948E99A1B7299E05FB781D99 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8F7CB77EB1D046A84B68525B499863 /* MemoryMonitor.swift */; };
+		01E843A77B38588B4E66A28C47B8CD11 /* JLConsoleLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B8395B9C74DD66F5BE22B732880EB /* JLConsoleLogModel.swift */; };
 		290DC07522CF102CE375C33A408552A3 /* Pods-JLConsoleLogExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0D26876B24CC0ECBBD25E0928812529 /* Pods-JLConsoleLogExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33D2CD5B7F4924781BD40649DF5E34A9 /* JLConsoleFloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C92F50110B50793AE776DE5794BA6D /* JLConsoleFloatingViewController.swift */; };
-		347A2C383AAD60A99B8E5BFD188EE534 /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E9B02517A4DD3B303E0DEFC04931CB /* FPSMonitor.swift */; };
-		3FCD796E0397490B8AB0B2C9751C5780 /* JLConsoleLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFABB33B53364445108577A250A61BD /* JLConsoleLogDetailViewController.swift */; };
-		43B1752B223CFA88E32ADBE9BA215212 /* JLConsoleLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010CAD3DD26FC1093B4930FF2CDDC21 /* JLConsoleLogManager.swift */; };
+		2FB7AA0772F83C1D0D73390254BE4EFC /* JLConsoleOptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56F740AA2A6F18A9F003E95CC82B2AF /* JLConsoleOptionalView.swift */; };
+		33D1A6B614278AFC9114A0E4E8FA4014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		43F502B6BF92EDF1687D9A819F13B255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		44F464C000FD9FD462D416E891AEB553 /* Pods-JLConsoleLogExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B46C5A0B4D563E4B06AE92F35F68E041 /* Pods-JLConsoleLogExample-dummy.m */; };
-		810A0191164B7D205877E462740D2A39 /* JLConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA11EE14A71344B98289CEEC2ECB997 /* JLConsoleLog.swift */; };
-		836FD23482BE0FC3459847AC7C46623C /* JLConsoleLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBE5583CF41DA9FBFF86C997D9BDD29 /* JLConsoleLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		866FD10197A8041E05C904B83F9E6172 /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68400E9941ECADA735CDFEC8C61FC4D8 /* CPUMonitor.swift */; };
-		8BAC5348AEF56AEC03256214C6CB7BD1 /* JLConsoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1F822380CA2E2D51FB4DE71C86DC31 /* JLConsoleController.swift */; };
-		941F7FB8031BF92F88B688ECEC004F1B /* JLConsoleLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FFF4EA8914BD0D36FD0D5C4799727E /* JLConsoleLog-dummy.m */; };
-		9FD34C0275C4769AA0109B96115D6DE0 /* JLBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC01506AB51714397E14D70AEE68A95 /* JLBubbleViewController.swift */; };
-		B6E8FA870B3D5153CD43FD01302CCC8F /* CardiogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA099EAB0C5F30A885674F24AD19114C /* CardiogramView.swift */; };
-		C85484CE8A8255C7A04E96C0F4C7212D /* JLConsoleFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B318A8B1DFF492D0C6D5F59A25D1767 /* JLConsoleFilterViewController.swift */; };
-		D153273BA52E4596FC3AA0C7C7388FFF /* JLConsoleLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27758559F1E2202C6847ED952FDCC85B /* JLConsoleLogModel.swift */; };
-		D1C3FF4450F380646BA8731C730A9425 /* DispatchMainSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521C8FFE809C82586C5BB3519D2AB67 /* DispatchMainSafe.swift */; };
-		D582EB7998D352B272B469B29090124B /* JLConsoleLogTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4015672B5AB7AEA9CF1E2B37A4AE3E /* JLConsoleLogTableView.swift */; };
-		D63144A73A2A694522A61776AF8E0507 /* JLConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D260317C5DE349310C42C447F7423D0 /* JLConsoleLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECF06BAB13BC21C5649E901A86A68D0F /* JLConsoleCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACDEFDB88DAB14AEF4C95B9BC7CEAD /* JLConsoleCanvasView.swift */; };
-		EDD4FCD64528CAE6A7A3BCD69F3CB4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		F889C5DD07DE23DA68CDCDC5DBF223FA /* JLConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632ACCA3375D4774B9A5D5F30306B54 /* JLConsoleViewController.swift */; };
-		FC8CD947A3CD678144AE1BEEA5CD4704 /* JLConsoleOptionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164D9CA15EEE7BAA602892CCA6ED942C /* JLConsoleOptionalView.swift */; };
-		FCA9A46B8BB77F12C717CC1205C73EFD /* JLPanNavigationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A888CE4A86B18D21FF69C7415D993B9E /* JLPanNavigationGestureRecognizer.swift */; };
-		FDF2238CAD9F7C55EBA8D417E651513B /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEEC945EA496AF157F1E123AAE93EEA /* PerformanceMonitor.swift */; };
+		4BFA055E3F98F287DD9973BCF4597A73 /* JLConsoleLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49666699FB517BF6E70F94948FC4A39 /* JLConsoleLog.swift */; };
+		4D0C184E7B40C279574DF6140949A377 /* JLConsoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C791B194CA0609A61E98D6A28E7A3C5 /* JLConsoleController.swift */; };
+		55751E02FD402C9BCCA250F7E1A9362F /* DispatchMainSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D4DCA8E3BE2A75ECF8937844790A4 /* DispatchMainSafe.swift */; };
+		5D035DE5EA99178EA1933143FEF99089 /* JLConsoleFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28136154802511119E6AD9C84CD0932F /* JLConsoleFilterViewController.swift */; };
+		5F223614D76C2B6BAD5B36B6F9FC8FCC /* JLConsoleLogTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EE004B75F03F9EB93A7D75F36723C /* JLConsoleLogTableView.swift */; };
+		649E7DA3B5EF3FB84077CA63C27DF18D /* FPSMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC444690522EA6CBC28532148CE8B5 /* FPSMonitor.swift */; };
+		798FDC3176D39E61E6C2716054003D1D /* JLConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A05D00FFA42A5B675694E33A30B854 /* JLConsoleLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A025362A6A9840872C7BC1FDF6B03AA /* JLConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5B0ACF4E76323D351B3E9EC6BAC34 /* JLConsoleViewController.swift */; };
+		7B727F0B958DED0377DECC0DEB76DE3B /* JLConsoleLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AEDA0C90DE32F55E1CD62A67F265EE /* JLConsoleLogDetailViewController.swift */; };
+		903723CC16974F16EB2B64358834683B /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC875ECDDA0481E238F5E06D354E816 /* PerformanceMonitor.swift */; };
+		918C230B7B1073DF1E08D5FA7B0325B4 /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1BE0D5E310104C04FC7414AB931485 /* CPUMonitor.swift */; };
+		9204719C4DFACC8372E2EF138FD99143 /* JLConsoleLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 941B24635AE5C4F17863E69F901375A0 /* JLConsoleLog-dummy.m */; };
+		95E2757DC2720AC4A5F58F555AAB3A66 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADD8949893477C300884D5B8FF3988 /* MemoryMonitor.swift */; };
+		B4EA680BC6ECE300A31C37FAFCCF8830 /* JLConsoleFloatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1115E74CF3E01AD96C67C6F12986DA1A /* JLConsoleFloatingViewController.swift */; };
+		BB6A9F4DF16B6B785D353284C98C0771 /* JLConsoleCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE467723DBCCD88781832B183F7CA2EB /* JLConsoleCanvasView.swift */; };
+		BFE7426435AC4E2773855701822DA625 /* JLConsoleLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0817AE441F0E4489F40BB879DA0C116 /* JLConsoleLogTests.swift */; };
+		C97023F33E896348A8FE561D7D450CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		CB2400544786D534EE31A6FE672D1D81 /* JLConsoleLogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0164C17620B6C5539084FCD079787674 /* JLConsoleLogManager.swift */; };
+		CBCED854DB114DD7E63E14349097EAF7 /* JLMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150331FCA996351015F2F0E6AD7064A9 /* JLMonitorViewController.swift */; };
+		D75289C6670B207A56C49A668C9E8D25 /* JLPanNavigationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3BF635D79844D914DD365E64A54338 /* JLPanNavigationGestureRecognizer.swift */; };
+		D8CF06D6599DC5687A242A6BCD908B67 /* JLConsoleLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE02AF9FEFFD7B30CE0A26B8F54DD8D /* JLConsoleLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01F35225153518AE06A84C7DAA1CB47 /* CardiogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E145481492F51B20F3AE63C9B67F2E /* CardiogramView.swift */; };
+		F8D4648300F6B29BAE2449ACA5202BD3 /* JLBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D46949D59EAEDD2B020F9647B5E73 /* JLBubbleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,66 +49,69 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0164C17620B6C5539084FCD079787674 /* JLConsoleLogManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleLogManager.swift; sourceTree = "<group>"; };
+		0B0C927572267640593E97F717BC1933 /* JLConsoleLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JLConsoleLog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1115E74CF3E01AD96C67C6F12986DA1A /* JLConsoleFloatingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleFloatingViewController.swift; sourceTree = "<group>"; };
+		118D46949D59EAEDD2B020F9647B5E73 /* JLBubbleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLBubbleViewController.swift; sourceTree = "<group>"; };
 		128C904C82065F1DCF3E42F4600F2204 /* Pods-JLConsoleLogExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JLConsoleLogExample.release.xcconfig"; sourceTree = "<group>"; };
-		164D9CA15EEE7BAA602892CCA6ED942C /* JLConsoleOptionalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleOptionalView.swift; path = JLConsoleLog/JLConsoleOptionalView.swift; sourceTree = "<group>"; };
+		130A0DDDE91D544F4DE8A80B03873BCB /* JLConsoleLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLConsoleLog-prefix.pch"; sourceTree = "<group>"; };
+		150331FCA996351015F2F0E6AD7064A9 /* JLMonitorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLMonitorViewController.swift; sourceTree = "<group>"; };
 		1F5B463764F74133852FB7DC0B8B0B39 /* Pods-JLConsoleLogExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JLConsoleLogExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24861B31496F49EB4F141A7375053F67 /* JLConsoleLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JLConsoleLog.debug.xcconfig; sourceTree = "<group>"; };
-		27758559F1E2202C6847ED952FDCC85B /* JLConsoleLogModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleLogModel.swift; path = JLConsoleLog/JLConsoleLogModel.swift; sourceTree = "<group>"; };
-		2DBA3A1BB7204299AEE7AC24D5200CD7 /* JLConsoleLog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JLConsoleLog-Info.plist"; sourceTree = "<group>"; };
+		27A05D00FFA42A5B675694E33A30B854 /* JLConsoleLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JLConsoleLog.h; sourceTree = "<group>"; };
+		28136154802511119E6AD9C84CD0932F /* JLConsoleFilterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleFilterViewController.swift; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		34ADD8949893477C300884D5B8FF3988 /* MemoryMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MemoryMonitor.swift; sourceTree = "<group>"; };
+		3A3B8395B9C74DD66F5BE22B732880EB /* JLConsoleLogModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleLogModel.swift; sourceTree = "<group>"; };
+		3A7EE004B75F03F9EB93A7D75F36723C /* JLConsoleLogTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleLogTableView.swift; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4D260317C5DE349310C42C447F7423D0 /* JLConsoleLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JLConsoleLog.h; path = JLConsoleLog/JLConsoleLog.h; sourceTree = "<group>"; };
+		4BF9AD1A374A407E7BE3941730AF7C1C /* JLConsoleLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JLConsoleLog.release.xcconfig; sourceTree = "<group>"; };
 		4FDF95A79C5BD8175803959A2E1E909F /* Pods-JLConsoleLogExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JLConsoleLogExample.modulemap"; sourceTree = "<group>"; };
-		5632ACCA3375D4774B9A5D5F30306B54 /* JLConsoleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleViewController.swift; sourceTree = "<group>"; };
-		57C92F50110B50793AE776DE5794BA6D /* JLConsoleFloatingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleFloatingViewController.swift; sourceTree = "<group>"; };
+		598819BC4C57058F93612C82F01D5117 /* JLConsoleLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JLConsoleLog.modulemap; sourceTree = "<group>"; };
 		5A1BAD64CD3D348076EBF601AB63CBEA /* Pods_JLConsoleLogExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JLConsoleLogExample.framework; path = "Pods-JLConsoleLogExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DA11EE14A71344B98289CEEC2ECB997 /* JLConsoleLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleLog.swift; path = JLConsoleLog/JLConsoleLog.swift; sourceTree = "<group>"; };
-		68400E9941ECADA735CDFEC8C61FC4D8 /* CPUMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
-		6B318A8B1DFF492D0C6D5F59A25D1767 /* JLConsoleFilterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleFilterViewController.swift; path = JLConsoleLog/JLConsoleFilterViewController.swift; sourceTree = "<group>"; };
+		69DC444690522EA6CBC28532148CE8B5 /* FPSMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
+		6A1BE0D5E310104C04FC7414AB931485 /* CPUMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
 		6D38A9383048727B7D9EC93498AF92BE /* Pods-JLConsoleLogExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JLConsoleLogExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		6E57F35CC42AB8A6E332BCDEC955CDFA /* Pods-JLConsoleLogExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JLConsoleLogExample-Info.plist"; sourceTree = "<group>"; };
-		7CEEC945EA496AF157F1E123AAE93EEA /* PerformanceMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
-		8D8F7CB77EB1D046A84B68525B499863 /* MemoryMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MemoryMonitor.swift; sourceTree = "<group>"; };
-		9521C8FFE809C82586C5BB3519D2AB67 /* DispatchMainSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchMainSafe.swift; path = JLConsoleLog/DispatchMainSafe.swift; sourceTree = "<group>"; };
-		97E9B02517A4DD3B303E0DEFC04931CB /* FPSMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
-		9CBE5583CF41DA9FBFF86C997D9BDD29 /* JLConsoleLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLConsoleLog-umbrella.h"; sourceTree = "<group>"; };
-		9D4015672B5AB7AEA9CF1E2B37A4AE3E /* JLConsoleLogTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleLogTableView.swift; path = JLConsoleLog/JLConsoleLogTableView.swift; sourceTree = "<group>"; };
+		745ACD0F2EF72C564C71C16F5F8A1BC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		79E145481492F51B20F3AE63C9B67F2E /* CardiogramView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardiogramView.swift; sourceTree = "<group>"; };
+		83AEDA0C90DE32F55E1CD62A67F265EE /* JLConsoleLogDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleLogDetailViewController.swift; sourceTree = "<group>"; };
+		86F5B0ACF4E76323D351B3E9EC6BAC34 /* JLConsoleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleViewController.swift; sourceTree = "<group>"; };
+		8FE02AF9FEFFD7B30CE0A26B8F54DD8D /* JLConsoleLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLConsoleLog-umbrella.h"; sourceTree = "<group>"; };
+		941B24635AE5C4F17863E69F901375A0 /* JLConsoleLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JLConsoleLog-dummy.m"; sourceTree = "<group>"; };
+		9C791B194CA0609A61E98D6A28E7A3C5 /* JLConsoleController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleController.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A67DDCA2FFC889D98A6C930622BD5EA4 /* JLConsoleLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JLConsoleLog.modulemap; sourceTree = "<group>"; };
+		A49666699FB517BF6E70F94948FC4A39 /* JLConsoleLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleLog.swift; sourceTree = "<group>"; };
 		A6FA4DB20013A7AEB162149832EEE8F2 /* JLConsoleLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JLConsoleLog.framework; path = JLConsoleLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A888CE4A86B18D21FF69C7415D993B9E /* JLPanNavigationGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLPanNavigationGestureRecognizer.swift; path = JLConsoleLog/JLPanNavigationGestureRecognizer.swift; sourceTree = "<group>"; };
-		AEFD90526A1FD231902E90767ACC3260 /* JLConsoleLog.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JLConsoleLog.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B010CAD3DD26FC1093B4930FF2CDDC21 /* JLConsoleLogManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleLogManager.swift; path = JLConsoleLog/JLConsoleLogManager.swift; sourceTree = "<group>"; };
-		B0FFF4EA8914BD0D36FD0D5C4799727E /* JLConsoleLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JLConsoleLog-dummy.m"; sourceTree = "<group>"; };
 		B46C5A0B4D563E4B06AE92F35F68E041 /* Pods-JLConsoleLogExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JLConsoleLogExample-dummy.m"; sourceTree = "<group>"; };
-		B6F6E681DF7257412C6172B377318C76 /* JLMonitorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLMonitorViewController.swift; sourceTree = "<group>"; };
-		B9ACDEFDB88DAB14AEF4C95B9BC7CEAD /* JLConsoleCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleCanvasView.swift; path = JLConsoleLog/JLConsoleCanvasView.swift; sourceTree = "<group>"; };
-		BA099EAB0C5F30A885674F24AD19114C /* CardiogramView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardiogramView.swift; sourceTree = "<group>"; };
-		BAFABB33B53364445108577A250A61BD /* JLConsoleLogDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleLogDetailViewController.swift; path = JLConsoleLog/JLConsoleLogDetailViewController.swift; sourceTree = "<group>"; };
-		BB9794AA5F7FF0F9855D5FE62448CD17 /* JLConsoleLog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JLConsoleLog.release.xcconfig; sourceTree = "<group>"; };
-		BDC01506AB51714397E14D70AEE68A95 /* JLBubbleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLBubbleViewController.swift; sourceTree = "<group>"; };
-		CA1F822380CA2E2D51FB4DE71C86DC31 /* JLConsoleController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JLConsoleController.swift; path = JLConsoleLog/JLConsoleController.swift; sourceTree = "<group>"; };
+		C04BBE02C6B717A74AE6D071510FDF70 /* LICENSE.md */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.md; sourceTree = "<group>"; };
+		C0817AE441F0E4489F40BB879DA0C116 /* JLConsoleLogTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleLogTests.swift; sourceTree = "<group>"; };
+		C56F740AA2A6F18A9F003E95CC82B2AF /* JLConsoleOptionalView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleOptionalView.swift; sourceTree = "<group>"; };
+		CE467723DBCCD88781832B183F7CA2EB /* JLConsoleCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLConsoleCanvasView.swift; sourceTree = "<group>"; };
 		CF557764453B39261763820D6D0E8E2A /* Pods-JLConsoleLogExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JLConsoleLogExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D12CA7D5098EEAC64571E5871CBA1074 /* JLConsoleLog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JLConsoleLog-Info.plist"; sourceTree = "<group>"; };
 		D6C28EFEB7B439B3F3752B9C7D3074FF /* Pods-JLConsoleLogExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JLConsoleLogExample-frameworks.sh"; sourceTree = "<group>"; };
-		E071E8DAEB58EA094051C522C4F0DE8D /* JLConsoleLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JLConsoleLog-prefix.pch"; sourceTree = "<group>"; };
 		E0D26876B24CC0ECBBD25E0928812529 /* Pods-JLConsoleLogExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JLConsoleLogExample-umbrella.h"; sourceTree = "<group>"; };
+		EB3BF635D79844D914DD365E64A54338 /* JLPanNavigationGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JLPanNavigationGestureRecognizer.swift; sourceTree = "<group>"; };
+		EEC875ECDDA0481E238F5E06D354E816 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		F987188E55ED879105284C35030B1BD4 /* JLConsoleLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JLConsoleLog.debug.xcconfig; sourceTree = "<group>"; };
+		FA6D4DCA8E3BE2A75ECF8937844790A4 /* DispatchMainSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchMainSafe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83CD53FFC8250591110517C77B2A0321 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EDD4FCD64528CAE6A7A3BCD69F3CB4D3 /* Foundation.framework in Frameworks */,
-				0EF60D2C79E8E76EC4EE277C6F10A46A /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		87A37DA57CF50C3ED61A069B376249E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				43F502B6BF92EDF1687D9A819F13B255 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D5701803914EFE0D0A99B9C50F0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D1A6B614278AFC9114A0E4E8FA4014 /* Foundation.framework in Frameworks */,
+				C97023F33E896348A8FE561D7D450CF6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,39 +135,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3243FBE089974DEBDB3141708C9D64B2 /* Performance */ = {
+		376CE3B281BF402D1A7957CFCB07058B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				68400E9941ECADA735CDFEC8C61FC4D8 /* CPUMonitor.swift */,
-				97E9B02517A4DD3B303E0DEFC04931CB /* FPSMonitor.swift */,
-				8D8F7CB77EB1D046A84B68525B499863 /* MemoryMonitor.swift */,
-				7CEEC945EA496AF157F1E123AAE93EEA /* PerformanceMonitor.swift */,
+				118D46949D59EAEDD2B020F9647B5E73 /* JLBubbleViewController.swift */,
+				1115E74CF3E01AD96C67C6F12986DA1A /* JLConsoleFloatingViewController.swift */,
+				86F5B0ACF4E76323D351B3E9EC6BAC34 /* JLConsoleViewController.swift */,
+				150331FCA996351015F2F0E6AD7064A9 /* JLMonitorViewController.swift */,
 			);
-			name = Performance;
-			path = JLConsoleLog/Performance;
+			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		36E159A5166A10138FE8B72E35976110 /* Development Pods */ = {
+		503866FC9C9007FD375840E1FA561DCB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				73851408BF4722F1521ADBE04745DC2D /* JLConsoleLog */,
+				0B0C927572267640593E97F717BC1933 /* JLConsoleLog.podspec */,
+				C04BBE02C6B717A74AE6D071510FDF70 /* LICENSE.md */,
+				745ACD0F2EF72C564C71C16F5F8A1BC6 /* README.md */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		59F649EF2A78598C86CEEEB4446CEC74 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A67DDCA2FFC889D98A6C930622BD5EA4 /* JLConsoleLog.modulemap */,
-				B0FFF4EA8914BD0D36FD0D5C4799727E /* JLConsoleLog-dummy.m */,
-				2DBA3A1BB7204299AEE7AC24D5200CD7 /* JLConsoleLog-Info.plist */,
-				E071E8DAEB58EA094051C522C4F0DE8D /* JLConsoleLog-prefix.pch */,
-				9CBE5583CF41DA9FBFF86C997D9BDD29 /* JLConsoleLog-umbrella.h */,
-				24861B31496F49EB4F141A7375053F67 /* JLConsoleLog.debug.xcconfig */,
-				BB9794AA5F7FF0F9855D5FE62448CD17 /* JLConsoleLog.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../JLConsoleLogExample/Pods/Target Support Files/JLConsoleLog";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		6B897C7702BBD96C8F3A3F70B4B60060 /* Targets Support Files */ = {
@@ -174,49 +165,60 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		73851408BF4722F1521ADBE04745DC2D /* JLConsoleLog */ = {
+		750EE9F0F8A5656C043CBC8C2791731B /* JLConsoleLog */ = {
 			isa = PBXGroup;
 			children = (
-				9521C8FFE809C82586C5BB3519D2AB67 /* DispatchMainSafe.swift */,
-				B9ACDEFDB88DAB14AEF4C95B9BC7CEAD /* JLConsoleCanvasView.swift */,
-				CA1F822380CA2E2D51FB4DE71C86DC31 /* JLConsoleController.swift */,
-				6B318A8B1DFF492D0C6D5F59A25D1767 /* JLConsoleFilterViewController.swift */,
-				4D260317C5DE349310C42C447F7423D0 /* JLConsoleLog.h */,
-				5DA11EE14A71344B98289CEEC2ECB997 /* JLConsoleLog.swift */,
-				BAFABB33B53364445108577A250A61BD /* JLConsoleLogDetailViewController.swift */,
-				B010CAD3DD26FC1093B4930FF2CDDC21 /* JLConsoleLogManager.swift */,
-				27758559F1E2202C6847ED952FDCC85B /* JLConsoleLogModel.swift */,
-				9D4015672B5AB7AEA9CF1E2B37A4AE3E /* JLConsoleLogTableView.swift */,
-				164D9CA15EEE7BAA602892CCA6ED942C /* JLConsoleOptionalView.swift */,
-				A888CE4A86B18D21FF69C7415D993B9E /* JLPanNavigationGestureRecognizer.swift */,
-				D003D0B98A73F9C8712B4C0218771BC8 /* CardiogramView */,
-				3243FBE089974DEBDB3141708C9D64B2 /* Performance */,
-				B5EBBBA94880C66477C828073445923A /* Pod */,
-				59F649EF2A78598C86CEEEB4446CEC74 /* Support Files */,
-				96B424A1149ACCD3388DB9D8AE6EB0C1 /* ViewController */,
+				AE98D1197BE9205863E9FBA0474C0ED2 /* JLConsoleLog */,
+				859D619D4B042A42374108AE5C061736 /* JLConsoleLogTests */,
+				503866FC9C9007FD375840E1FA561DCB /* Pod */,
+				F1BEA3C8F6910E623A9DC725AB9A4F11 /* Support Files */,
 			);
 			name = JLConsoleLog;
-			path = ../../JLConsoleLog;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		96B424A1149ACCD3388DB9D8AE6EB0C1 /* ViewController */ = {
+		859D619D4B042A42374108AE5C061736 /* JLConsoleLogTests */ = {
 			isa = PBXGroup;
 			children = (
-				BDC01506AB51714397E14D70AEE68A95 /* JLBubbleViewController.swift */,
-				57C92F50110B50793AE776DE5794BA6D /* JLConsoleFloatingViewController.swift */,
-				5632ACCA3375D4774B9A5D5F30306B54 /* JLConsoleViewController.swift */,
-				B6F6E681DF7257412C6172B377318C76 /* JLMonitorViewController.swift */,
+				C0817AE441F0E4489F40BB879DA0C116 /* JLConsoleLogTests.swift */,
 			);
-			name = ViewController;
-			path = JLConsoleLog/ViewController;
+			name = JLConsoleLogTests;
+			path = JLConsoleLog/JLConsoleLogTests;
 			sourceTree = "<group>";
 		};
-		B5EBBBA94880C66477C828073445923A /* Pod */ = {
+		89E988013E80FF7288CD521F565D56B3 /* Performance */ = {
 			isa = PBXGroup;
 			children = (
-				AEFD90526A1FD231902E90767ACC3260 /* JLConsoleLog.podspec */,
+				6A1BE0D5E310104C04FC7414AB931485 /* CPUMonitor.swift */,
+				69DC444690522EA6CBC28532148CE8B5 /* FPSMonitor.swift */,
+				34ADD8949893477C300884D5B8FF3988 /* MemoryMonitor.swift */,
+				EEC875ECDDA0481E238F5E06D354E816 /* PerformanceMonitor.swift */,
 			);
-			name = Pod;
+			name = Performance;
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		AE98D1197BE9205863E9FBA0474C0ED2 /* JLConsoleLog */ = {
+			isa = PBXGroup;
+			children = (
+				FA6D4DCA8E3BE2A75ECF8937844790A4 /* DispatchMainSafe.swift */,
+				CE467723DBCCD88781832B183F7CA2EB /* JLConsoleCanvasView.swift */,
+				9C791B194CA0609A61E98D6A28E7A3C5 /* JLConsoleController.swift */,
+				28136154802511119E6AD9C84CD0932F /* JLConsoleFilterViewController.swift */,
+				27A05D00FFA42A5B675694E33A30B854 /* JLConsoleLog.h */,
+				A49666699FB517BF6E70F94948FC4A39 /* JLConsoleLog.swift */,
+				83AEDA0C90DE32F55E1CD62A67F265EE /* JLConsoleLogDetailViewController.swift */,
+				0164C17620B6C5539084FCD079787674 /* JLConsoleLogManager.swift */,
+				3A3B8395B9C74DD66F5BE22B732880EB /* JLConsoleLogModel.swift */,
+				3A7EE004B75F03F9EB93A7D75F36723C /* JLConsoleLogTableView.swift */,
+				C56F740AA2A6F18A9F003E95CC82B2AF /* JLConsoleOptionalView.swift */,
+				EB3BF635D79844D914DD365E64A54338 /* JLPanNavigationGestureRecognizer.swift */,
+				CA6ABC706555214E917E671AF705122A /* CardiogramView */,
+				89E988013E80FF7288CD521F565D56B3 /* Performance */,
+				376CE3B281BF402D1A7957CFCB07058B /* ViewController */,
+			);
+			name = JLConsoleLog;
+			path = JLConsoleLog/JLConsoleLog;
 			sourceTree = "<group>";
 		};
 		C83D305580F2A3936EACF2903F701033 /* Pods-JLConsoleLogExample */ = {
@@ -236,24 +238,24 @@
 			path = "Target Support Files/Pods-JLConsoleLogExample";
 			sourceTree = "<group>";
 		};
+		CA6ABC706555214E917E671AF705122A /* CardiogramView */ = {
+			isa = PBXGroup;
+			children = (
+				79E145481492F51B20F3AE63C9B67F2E /* CardiogramView.swift */,
+			);
+			name = CardiogramView;
+			path = CardiogramView;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				36E159A5166A10138FE8B72E35976110 /* Development Pods */,
+				EC0A120FB5B9FAC75F6F0A97B0A947CE /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				043433C396C0C90DC85CC936C7A0202C /* Products */,
 				6B897C7702BBD96C8F3A3F70B4B60060 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D003D0B98A73F9C8712B4C0218771BC8 /* CardiogramView */ = {
-			isa = PBXGroup;
-			children = (
-				BA099EAB0C5F30A885674F24AD19114C /* CardiogramView.swift */,
-			);
-			name = CardiogramView;
-			path = JLConsoleLog/CardiogramView;
 			sourceTree = "<group>";
 		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
@@ -265,23 +267,46 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EC0A120FB5B9FAC75F6F0A97B0A947CE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				750EE9F0F8A5656C043CBC8C2791731B /* JLConsoleLog */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F1BEA3C8F6910E623A9DC725AB9A4F11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				598819BC4C57058F93612C82F01D5117 /* JLConsoleLog.modulemap */,
+				941B24635AE5C4F17863E69F901375A0 /* JLConsoleLog-dummy.m */,
+				D12CA7D5098EEAC64571E5871CBA1074 /* JLConsoleLog-Info.plist */,
+				130A0DDDE91D544F4DE8A80B03873BCB /* JLConsoleLog-prefix.pch */,
+				8FE02AF9FEFFD7B30CE0A26B8F54DD8D /* JLConsoleLog-umbrella.h */,
+				F987188E55ED879105284C35030B1BD4 /* JLConsoleLog.debug.xcconfig */,
+				4BF9AD1A374A407E7BE3941730AF7C1C /* JLConsoleLog.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "JLConsoleLogExample/Pods/Target Support Files/JLConsoleLog";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		21255629CA0A3D0E8BDA4C8D90F735CD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				836FD23482BE0FC3459847AC7C46623C /* JLConsoleLog-umbrella.h in Headers */,
-				D63144A73A2A694522A61776AF8E0507 /* JLConsoleLog.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		615E0C2D3F05D9929DE6A06E5AEAE65C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				290DC07522CF102CE375C33A408552A3 /* Pods-JLConsoleLogExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0F445407168C70EE68A4684401E423C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8CF06D6599DC5687A242A6BCD908B67 /* JLConsoleLog-umbrella.h in Headers */,
+				798FDC3176D39E61E6C2716054003D1D /* JLConsoleLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,12 +334,12 @@
 		};
 		CB200A5C8E8A6D5429FCE9726371208D /* JLConsoleLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 539100B8F65A56FB63CFB570861353D4 /* Build configuration list for PBXNativeTarget "JLConsoleLog" */;
+			buildConfigurationList = 432DDA850388A98B7F522D658F45DB18 /* Build configuration list for PBXNativeTarget "JLConsoleLog" */;
 			buildPhases = (
-				21255629CA0A3D0E8BDA4C8D90F735CD /* Headers */,
-				6D9B0C7820972EF0232A5CF44D4B1DBD /* Sources */,
-				83CD53FFC8250591110517C77B2A0321 /* Frameworks */,
-				839B76218F552BF9B363CCBCBB94DCCA /* Resources */,
+				F0F445407168C70EE68A4684401E423C /* Headers */,
+				C649FCF14C559D27B2CB6F6C0E2CE927 /* Sources */,
+				F53D5701803914EFE0D0A99B9C50F0EF /* Frameworks */,
+				16D6199593B9D6A9B3239AADDAC04FAC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -354,14 +379,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		510891C580B60716FCE574C6AF984F8E /* Resources */ = {
+		16D6199593B9D6A9B3239AADDAC04FAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		839B76218F552BF9B363CCBCBB94DCCA /* Resources */ = {
+		510891C580B60716FCE574C6AF984F8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,39 +396,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6D9B0C7820972EF0232A5CF44D4B1DBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6E8FA870B3D5153CD43FD01302CCC8F /* CardiogramView.swift in Sources */,
-				866FD10197A8041E05C904B83F9E6172 /* CPUMonitor.swift in Sources */,
-				D1C3FF4450F380646BA8731C730A9425 /* DispatchMainSafe.swift in Sources */,
-				347A2C383AAD60A99B8E5BFD188EE534 /* FPSMonitor.swift in Sources */,
-				9FD34C0275C4769AA0109B96115D6DE0 /* JLBubbleViewController.swift in Sources */,
-				ECF06BAB13BC21C5649E901A86A68D0F /* JLConsoleCanvasView.swift in Sources */,
-				8BAC5348AEF56AEC03256214C6CB7BD1 /* JLConsoleController.swift in Sources */,
-				C85484CE8A8255C7A04E96C0F4C7212D /* JLConsoleFilterViewController.swift in Sources */,
-				33D2CD5B7F4924781BD40649DF5E34A9 /* JLConsoleFloatingViewController.swift in Sources */,
-				941F7FB8031BF92F88B688ECEC004F1B /* JLConsoleLog-dummy.m in Sources */,
-				810A0191164B7D205877E462740D2A39 /* JLConsoleLog.swift in Sources */,
-				3FCD796E0397490B8AB0B2C9751C5780 /* JLConsoleLogDetailViewController.swift in Sources */,
-				43B1752B223CFA88E32ADBE9BA215212 /* JLConsoleLogManager.swift in Sources */,
-				D153273BA52E4596FC3AA0C7C7388FFF /* JLConsoleLogModel.swift in Sources */,
-				D582EB7998D352B272B469B29090124B /* JLConsoleLogTableView.swift in Sources */,
-				FC8CD947A3CD678144AE1BEEA5CD4704 /* JLConsoleOptionalView.swift in Sources */,
-				F889C5DD07DE23DA68CDCDC5DBF223FA /* JLConsoleViewController.swift in Sources */,
-				1E0D67702F63751EDE3B946C08FB2872 /* JLMonitorViewController.swift in Sources */,
-				FCA9A46B8BB77F12C717CC1205C73EFD /* JLPanNavigationGestureRecognizer.swift in Sources */,
-				212511C5948E99A1B7299E05FB781D99 /* MemoryMonitor.swift in Sources */,
-				FDF2238CAD9F7C55EBA8D417E651513B /* PerformanceMonitor.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		72D381CEBA5F8D05DEC58667D5D3C3F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				44F464C000FD9FD462D416E891AEB553 /* Pods-JLConsoleLogExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C649FCF14C559D27B2CB6F6C0E2CE927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01F35225153518AE06A84C7DAA1CB47 /* CardiogramView.swift in Sources */,
+				918C230B7B1073DF1E08D5FA7B0325B4 /* CPUMonitor.swift in Sources */,
+				55751E02FD402C9BCCA250F7E1A9362F /* DispatchMainSafe.swift in Sources */,
+				649E7DA3B5EF3FB84077CA63C27DF18D /* FPSMonitor.swift in Sources */,
+				F8D4648300F6B29BAE2449ACA5202BD3 /* JLBubbleViewController.swift in Sources */,
+				BB6A9F4DF16B6B785D353284C98C0771 /* JLConsoleCanvasView.swift in Sources */,
+				4D0C184E7B40C279574DF6140949A377 /* JLConsoleController.swift in Sources */,
+				5D035DE5EA99178EA1933143FEF99089 /* JLConsoleFilterViewController.swift in Sources */,
+				B4EA680BC6ECE300A31C37FAFCCF8830 /* JLConsoleFloatingViewController.swift in Sources */,
+				9204719C4DFACC8372E2EF138FD99143 /* JLConsoleLog-dummy.m in Sources */,
+				4BFA055E3F98F287DD9973BCF4597A73 /* JLConsoleLog.swift in Sources */,
+				7B727F0B958DED0377DECC0DEB76DE3B /* JLConsoleLogDetailViewController.swift in Sources */,
+				CB2400544786D534EE31A6FE672D1D81 /* JLConsoleLogManager.swift in Sources */,
+				01E843A77B38588B4E66A28C47B8CD11 /* JLConsoleLogModel.swift in Sources */,
+				5F223614D76C2B6BAD5B36B6F9FC8FCC /* JLConsoleLogTableView.swift in Sources */,
+				BFE7426435AC4E2773855701822DA625 /* JLConsoleLogTests.swift in Sources */,
+				2FB7AA0772F83C1D0D73390254BE4EFC /* JLConsoleOptionalView.swift in Sources */,
+				7A025362A6A9840872C7BC1FDF6B03AA /* JLConsoleViewController.swift in Sources */,
+				CBCED854DB114DD7E63E14349097EAF7 /* JLMonitorViewController.swift in Sources */,
+				D75289C6670B207A56C49A668C9E8D25 /* JLPanNavigationGestureRecognizer.swift in Sources */,
+				95E2757DC2720AC4A5F58F555AAB3A66 /* MemoryMonitor.swift in Sources */,
+				903723CC16974F16EB2B64358834683B /* PerformanceMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,41 +445,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0DE7C2E30662D80C7B1814FC545D3E53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24861B31496F49EB4F141A7375053F67 /* JLConsoleLog.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JLConsoleLog/JLConsoleLog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog.modulemap";
-				PRODUCT_MODULE_NAME = JLConsoleLog;
-				PRODUCT_NAME = JLConsoleLog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,42 +508,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		4B6B13CCE63B17AD4014575BC48B2272 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB9794AA5F7FF0F9855D5FE62448CD17 /* JLConsoleLog.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JLConsoleLog/JLConsoleLog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog.modulemap";
-				PRODUCT_MODULE_NAME = JLConsoleLog;
-				PRODUCT_NAME = JLConsoleLog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8689E620F48BD8BD957FA4A3B66F87A2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -691,23 +646,96 @@
 			};
 			name = Release;
 		};
+		E5A6CFB17000DFD9B8B4186D22F3A112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F987188E55ED879105284C35030B1BD4 /* JLConsoleLog.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JLConsoleLog/JLConsoleLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog.modulemap";
+				PRODUCT_MODULE_NAME = JLConsoleLog;
+				PRODUCT_NAME = JLConsoleLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F97000C54B2A49E581C477E47E5A2999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF9AD1A374A407E7BE3941730AF7C1C /* JLConsoleLog.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JLConsoleLog/JLConsoleLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JLConsoleLog/JLConsoleLog.modulemap";
+				PRODUCT_MODULE_NAME = JLConsoleLog;
+				PRODUCT_NAME = JLConsoleLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		432DDA850388A98B7F522D658F45DB18 /* Build configuration list for PBXNativeTarget "JLConsoleLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5A6CFB17000DFD9B8B4186D22F3A112 /* Debug */,
+				F97000C54B2A49E581C477E47E5A2999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				196DFA3E4A09A28224918543529A1885 /* Debug */,
 				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		539100B8F65A56FB63CFB570861353D4 /* Build configuration list for PBXNativeTarget "JLConsoleLog" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0DE7C2E30662D80C7B1814FC545D3E53 /* Debug */,
-				4B6B13CCE63B17AD4014575BC48B2272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

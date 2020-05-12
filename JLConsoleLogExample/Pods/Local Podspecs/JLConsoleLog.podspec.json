@@ -5,7 +5,8 @@
     "jacklandrin": "jacklandrin@hotmail.com"
   },
   "homepage": "http://www.jacklandrin.com",
-  "summary": "console log",
+  "summary": "A convenient In-App floating log console with Swift for iOS",
+  "license": "MIT",
   "source": {
     "git": "https://github.com/jacklandrin/JLConsoleLog",
     "tag": "v1.0.0"
@@ -15,9 +16,9 @@
     "UIKit"
   ],
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
-  "prefix_header_file": "JLConsoleLog/JLConsoleLog.h",
+  "prefix_header_file": "JLConsoleLog/JLConsoleLog/JLConsoleLog.h",
   "source_files": [
     "JLConsoleLog/**/*.{h,swift}"
   ],

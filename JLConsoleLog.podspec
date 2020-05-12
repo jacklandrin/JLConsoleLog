@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'Foundation', 'UIKit'
   s.ios.deployment_target = '10.0'
   
-	s.prefix_header_file = 'JLConsoleLog/JLConsoleLog.h'
+	s.prefix_header_file = 'JLConsoleLog/JLConsoleLog/JLConsoleLog.h'
 	s.source_files = ["JLConsoleLog/**/*.{h,swift}"]
   s.requires_arc = true
 
