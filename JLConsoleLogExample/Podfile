@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '10.0'
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'JLConsoleLogExample' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,10 +8,11 @@ target 'JLConsoleLogExample' do
   pod 'JLConsoleLog', :path =>'../'
   # Pods for JLConsoleLogExample
 
-#  target 'JLConsoleLogExampleTests' do
-#    inherit! :search_paths
-#    # Pods for testing
-#  end
+  target 'JLConsoleLogExampleTests' do
+    inherit! :search_paths
+    pod 'FBSnapshotTestCase'
+    # Pods for testing
+  end
 #
 #  target 'JLConsoleLogExampleUITests' do
 #    # Pods for testing

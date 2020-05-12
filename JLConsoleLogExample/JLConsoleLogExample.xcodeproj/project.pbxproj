@@ -17,6 +17,7 @@
 		CCAD67082457E34400E5D141 /* JLConsoleLogExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */; };
 		CCAD67132457E34400E5D141 /* JLConsoleLogExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */; };
 		CCAD675D2457E94800E5D141 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */; };
+		E37062436B14553E561F2D06 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69100C695601E9AFAE628EF /* Pods_JLConsoleLogExampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1561E5399BB8BF7DDF3C7C /* Pods-JLConsoleLogExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.release.xcconfig"; sourceTree = "<group>"; };
 		3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.debug.xcconfig"; sourceTree = "<group>"; };
 		977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A69100C695601E9AFAE628EF /* Pods_JLConsoleLogExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLConsoleLogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66F02457E34100E5D141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCAD66F22457E34100E5D141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogExampleUITests.swift; sourceTree = "<group>"; };
 		CCAD67142457E34400E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		F1C5908ECBDA660B4355E615 /* Pods-JLConsoleLogExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37062436B14553E561F2D06 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */,
+				A69100C695601E9AFAE628EF /* Pods_JLConsoleLogExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +102,8 @@
 			children = (
 				3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */,
 				317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */,
+				0C1561E5399BB8BF7DDF3C7C /* Pods-JLConsoleLogExampleTests.debug.xcconfig */,
+				F1C5908ECBDA660B4355E615 /* Pods-JLConsoleLogExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -181,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCAD671A2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleTests" */;
 			buildPhases = (
+				C5A6573905C357640CD6FBD0 /* [CP] Check Pods Manifest.lock */,
 				CCAD66FF2457E34400E5D141 /* Sources */,
 				CCAD67002457E34400E5D141 /* Frameworks */,
 				CCAD67012457E34400E5D141 /* Resources */,
+				633AAF44B852D0F25BA3FDE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +294,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		633AAF44B852D0F25BA3FDE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		67927C44C5EFF44CC7C7E8B7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +326,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A6573905C357640CD6FBD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6C57A241E2A46A6A0A2FC64 /* [CP] Check Pods Manifest.lock */ = {
@@ -391,6 +440,7 @@
 		CCAD67152457E34400E5D141 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -451,6 +501,7 @@
 		CCAD67162457E34400E5D141 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -549,13 +600,14 @@
 		};
 		CCAD671B2457E34400E5D141 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1561E5399BB8BF7DDF3C7C /* Pods-JLConsoleLogExampleTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B22726TNGH;
 				INFOPLIST_FILE = JLConsoleLogExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,13 +623,14 @@
 		};
 		CCAD671C2457E34400E5D141 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C5908ECBDA660B4355E615 /* Pods-JLConsoleLogExampleTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B22726TNGH;
 				INFOPLIST_FILE = JLConsoleLogExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +651,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B22726TNGH;
 				INFOPLIST_FILE = JLConsoleLogExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,6 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B22726TNGH;
 				INFOPLIST_FILE = JLConsoleLogExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

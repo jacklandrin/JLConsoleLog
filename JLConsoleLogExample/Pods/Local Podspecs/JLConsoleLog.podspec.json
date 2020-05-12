@@ -9,7 +9,7 @@
   "license": "MIT",
   "source": {
     "git": "https://github.com/jacklandrin/JLConsoleLog",
-    "tag": "v1.0.0"
+    "tag": "1.0.0"
   },
   "frameworks": [
     "Foundation",
