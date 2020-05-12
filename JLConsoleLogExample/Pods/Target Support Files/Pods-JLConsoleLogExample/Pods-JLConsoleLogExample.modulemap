@@ -1,6 +1,0 @@
-framework module Pods_JLConsoleLogExample {
-  umbrella header "Pods-JLConsoleLogExample-umbrella.h"
-
-  export *
-  module * { export * }
-}

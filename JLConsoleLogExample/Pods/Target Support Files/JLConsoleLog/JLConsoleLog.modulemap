@@ -1,6 +1,0 @@
-framework module JLConsoleLog {
-  umbrella header "JLConsoleLog-umbrella.h"
-
-  export *
-  module * { export * }
-}
