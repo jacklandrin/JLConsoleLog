@@ -8,11 +8,11 @@ target 'JLConsoleLogExample' do
   pod 'JLConsoleLog', :path =>'../'
   # Pods for JLConsoleLogExample
 
-  target 'JLConsoleLogExampleTests' do
-    inherit! :search_paths
-    pod 'FBSnapshotTestCase'
-    # Pods for testing
-  end
+#  target 'JLConsoleLogExampleTests' do
+#    inherit! :search_paths
+#    pod 'FBSnapshotTestCase'
+#    # Pods for testing
+#  end
 #
 #  target 'JLConsoleLogExampleUITests' do
 #    # Pods for testing

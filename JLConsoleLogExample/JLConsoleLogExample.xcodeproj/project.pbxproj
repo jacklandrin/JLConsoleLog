@@ -14,28 +14,8 @@
 		CCAD66F82457E34200E5D141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66F62457E34200E5D141 /* Main.storyboard */; };
 		CCAD66FA2457E34300E5D141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66F92457E34300E5D141 /* Assets.xcassets */; };
 		CCAD66FD2457E34300E5D141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD66FB2457E34300E5D141 /* LaunchScreen.storyboard */; };
-		CCAD67082457E34400E5D141 /* JLConsoleLogExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */; };
-		CCAD67132457E34400E5D141 /* JLConsoleLogExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */; };
 		CCAD675D2457E94800E5D141 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */; };
-		E37062436B14553E561F2D06 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A69100C695601E9AFAE628EF /* Pods_JLConsoleLogExampleTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CCAD67042457E34400E5D141 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCAD66E52457E34100E5D141 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCAD66EC2457E34100E5D141;
-			remoteInfo = JLConsoleLogExample;
-		};
-		CCAD670F2457E34400E5D141 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCAD66E52457E34100E5D141 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCAD66EC2457E34100E5D141;
-			remoteInfo = JLConsoleLogExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C1561E5399BB8BF7DDF3C7C /* Pods-JLConsoleLogExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,12 +31,6 @@
 		CCAD66F92457E34300E5D141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCAD66FC2457E34300E5D141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCAD66FE2457E34300E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCAD67032457E34400E5D141 /* JLConsoleLogExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLConsoleLogExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogExampleTests.swift; sourceTree = "<group>"; };
-		CCAD67092457E34400E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCAD670E2457E34400E5D141 /* JLConsoleLogExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLConsoleLogExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogExampleUITests.swift; sourceTree = "<group>"; };
-		CCAD67142457E34400E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCAD675C2457E94800E5D141 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
 		F1C5908ECBDA660B4355E615 /* Pods-JLConsoleLogExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExampleTests.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,21 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				571DC98B2B08DB994D1E2ABD /* Pods_JLConsoleLogExample.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD67002457E34400E5D141 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E37062436B14553E561F2D06 /* Pods_JLConsoleLogExampleTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD670B2457E34400E5D141 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				CCAD66EF2457E34100E5D141 /* JLConsoleLogExample */,
-				CCAD67062457E34400E5D141 /* JLConsoleLogExampleTests */,
-				CCAD67112457E34400E5D141 /* JLConsoleLogExampleUITests */,
 				CCAD66EE2457E34100E5D141 /* Products */,
 				329F99CCD5ECBE0920A37C28 /* Pods */,
 				1BC7AC84FCE661915FA9DB11 /* Frameworks */,
@@ -124,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */,
-				CCAD67032457E34400E5D141 /* JLConsoleLogExampleTests.xctest */,
-				CCAD670E2457E34400E5D141 /* JLConsoleLogExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,24 +98,6 @@
 				CCAD66FE2457E34300E5D141 /* Info.plist */,
 			);
 			path = JLConsoleLogExample;
-			sourceTree = "<group>";
-		};
-		CCAD67062457E34400E5D141 /* JLConsoleLogExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCAD67072457E34400E5D141 /* JLConsoleLogExampleTests.swift */,
-				CCAD67092457E34400E5D141 /* Info.plist */,
-			);
-			path = JLConsoleLogExampleTests;
-			sourceTree = "<group>";
-		};
-		CCAD67112457E34400E5D141 /* JLConsoleLogExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CCAD67122457E34400E5D141 /* JLConsoleLogExampleUITests.swift */,
-				CCAD67142457E34400E5D141 /* Info.plist */,
-			);
-			path = JLConsoleLogExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,44 +122,6 @@
 			productReference = CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CCAD67022457E34400E5D141 /* JLConsoleLogExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCAD671A2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleTests" */;
-			buildPhases = (
-				C5A6573905C357640CD6FBD0 /* [CP] Check Pods Manifest.lock */,
-				CCAD66FF2457E34400E5D141 /* Sources */,
-				CCAD67002457E34400E5D141 /* Frameworks */,
-				CCAD67012457E34400E5D141 /* Resources */,
-				633AAF44B852D0F25BA3FDE1 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCAD67052457E34400E5D141 /* PBXTargetDependency */,
-			);
-			name = JLConsoleLogExampleTests;
-			productName = JLConsoleLogExampleTests;
-			productReference = CCAD67032457E34400E5D141 /* JLConsoleLogExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CCAD670D2457E34400E5D141 /* JLConsoleLogExampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCAD671D2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleUITests" */;
-			buildPhases = (
-				CCAD670A2457E34400E5D141 /* Sources */,
-				CCAD670B2457E34400E5D141 /* Frameworks */,
-				CCAD670C2457E34400E5D141 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCAD67102457E34400E5D141 /* PBXTargetDependency */,
-			);
-			name = JLConsoleLogExampleUITests;
-			productName = JLConsoleLogExampleUITests;
-			productReference = CCAD670E2457E34400E5D141 /* JLConsoleLogExampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,14 +134,6 @@
 				TargetAttributes = {
 					CCAD66EC2457E34100E5D141 = {
 						CreatedOnToolsVersion = 11.4.1;
-					};
-					CCAD67022457E34400E5D141 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = CCAD66EC2457E34100E5D141;
-					};
-					CCAD670D2457E34400E5D141 = {
-						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = CCAD66EC2457E34100E5D141;
 					};
 				};
 			};
@@ -260,8 +151,6 @@
 			projectRoot = "";
 			targets = (
 				CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */,
-				CCAD67022457E34400E5D141 /* JLConsoleLogExampleTests */,
-				CCAD670D2457E34400E5D141 /* JLConsoleLogExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,40 +166,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCAD67012457E34400E5D141 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD670C2457E34400E5D141 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		633AAF44B852D0F25BA3FDE1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExampleTests/Pods-JLConsoleLogExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		67927C44C5EFF44CC7C7E8B7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,28 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C5A6573905C357640CD6FBD0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JLConsoleLogExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6C57A241E2A46A6A0A2FC64 /* [CP] Check Pods Manifest.lock */ = {
@@ -386,36 +222,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCAD66FF2457E34400E5D141 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD67082457E34400E5D141 /* JLConsoleLogExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD670A2457E34400E5D141 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD67132457E34400E5D141 /* JLConsoleLogExampleUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CCAD67052457E34400E5D141 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */;
-			targetProxy = CCAD67042457E34400E5D141 /* PBXContainerItemProxy */;
-		};
-		CCAD67102457E34400E5D141 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CCAD66EC2457E34100E5D141 /* JLConsoleLogExample */;
-			targetProxy = CCAD670F2457E34400E5D141 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CCAD66F62457E34200E5D141 /* Main.storyboard */ = {
@@ -598,94 +405,6 @@
 			};
 			name = Release;
 		};
-		CCAD671B2457E34400E5D141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1561E5399BB8BF7DDF3C7C /* Pods-JLConsoleLogExampleTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B22726TNGH;
-				INFOPLIST_FILE = JLConsoleLogExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLConsoleLogExample.app/JLConsoleLogExample";
-			};
-			name = Debug;
-		};
-		CCAD671C2457E34400E5D141 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1C5908ECBDA660B4355E615 /* Pods-JLConsoleLogExampleTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B22726TNGH;
-				INFOPLIST_FILE = JLConsoleLogExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JLConsoleLogExample.app/JLConsoleLogExample";
-			};
-			name = Release;
-		};
-		CCAD671E2457E34400E5D141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B22726TNGH;
-				INFOPLIST_FILE = JLConsoleLogExampleUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JLConsoleLogExample;
-			};
-			name = Debug;
-		};
-		CCAD671F2457E34400E5D141 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B22726TNGH;
-				INFOPLIST_FILE = JLConsoleLogExampleUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogExampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = JLConsoleLogExample;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,24 +422,6 @@
 			buildConfigurations = (
 				CCAD67182457E34400E5D141 /* Debug */,
 				CCAD67192457E34400E5D141 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCAD671A2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCAD671B2457E34400E5D141 /* Debug */,
-				CCAD671C2457E34400E5D141 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCAD671D2457E34400E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogExampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCAD671E2457E34400E5D141 /* Debug */,
-				CCAD671F2457E34400E5D141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

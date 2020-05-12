@@ -12,6 +12,7 @@
 		CC4CCFB62464368700E49829 /* CardiogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB52464368700E49829 /* CardiogramView.swift */; };
 		CC4CCFB82464391600E49829 /* JLPanNavigationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */; };
 		CC4CCFBA24643F2600E49829 /* JLMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */; };
+		CC4F51F7246AC2EE00AC2A53 /* JLConsoleLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67382457E3CA00E5D141 /* JLConsoleLogTests.swift */; };
 		CCA629122462AAF3004D8A57 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */; };
 		CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */; };
 		CCAD67342457E3CA00E5D141 /* JLConsoleLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */; };
@@ -295,6 +296,7 @@
 				CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */,
 				CCAD67502457E40A00E5D141 /* JLConsoleLogDetailViewController.swift in Sources */,
 				CCAD675B2457E40A00E5D141 /* JLConsoleFloatingViewController.swift in Sources */,
+				CC4F51F7246AC2EE00AC2A53 /* JLConsoleLogTests.swift in Sources */,
 				CCAD67572457E40A00E5D141 /* JLConsoleLogModel.swift in Sources */,
 				CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */,
 				CCAD67522457E40A00E5D141 /* JLConsoleCanvasView.swift in Sources */,
