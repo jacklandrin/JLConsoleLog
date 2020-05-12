@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'JLConsoleLog'
-  s.version      = '1.0.2'
+  s.version      = '1.0.3'
   s.authors      = {'jacklandrin' => 'jacklandrin@hotmail.com'}
   s.homepage     = 'http://www.jacklandrin.com'
   s.summary      = 'A convenient In-App floating log console with Swift for iOS'
