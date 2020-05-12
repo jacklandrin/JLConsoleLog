@@ -43,7 +43,7 @@ public class FPSMonitor: NSObject {
         
         link = CADisplayLink(target: WeakProxy.init(target: self), selector: #selector(WeakProxy.tick(link:)))
         link?.isPaused = true
-        link?.add(to: RunLoop.main, forMode: .common)
+        link?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
         setupObservers()
     }
     
@@ -58,19 +58,19 @@ public class FPSMonitor: NSObject {
     func setupObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(applicationWillResignActiveNotification),
-                                               name: UIApplication.willResignActiveNotification,
+                                               name: NSNotification.Name.UIApplicationWillResignActive,
                                                object: nil)
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(applicationDidBecomeActiveNotification),
-                                               name: UIApplication.didBecomeActiveNotification,
+                                               name: NSNotification.Name.UIApplicationDidBecomeActive,
                                                object: nil)
     }
     
     deinit {
         link?.invalidate()
-        NotificationCenter.default.removeObserver(self, name: UIApplication.willResignActiveNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
     }
     
     func tick(link: CADisplayLink) {

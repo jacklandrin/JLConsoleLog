@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'JLConsoleLog'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.authors      = {'jacklandrin' => 'jacklandrin@hotmail.com'}
   s.homepage     = 'http://www.jacklandrin.com'
   s.summary      = 'A convenient In-App floating log console with Swift for iOS'
@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
 	s.prefix_header_file = 'JLConsoleLog/JLConsoleLog/JLConsoleLog.h'
 	s.source_files = ["JLConsoleLog/**/*.{h,swift}"]
   s.requires_arc = true
+  s.swift_version = '5.0'
 
 end
