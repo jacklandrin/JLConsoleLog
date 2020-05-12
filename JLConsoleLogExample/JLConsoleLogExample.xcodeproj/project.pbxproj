@@ -21,7 +21,6 @@
 		317E22D179C27379E9900D00 /* Pods-JLConsoleLogExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.release.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.release.xcconfig"; sourceTree = "<group>"; };
 		3CE76F78C2809A3378B25D97 /* Pods-JLConsoleLogExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLConsoleLogExample.debug.xcconfig"; path = "Target Support Files/Pods-JLConsoleLogExample/Pods-JLConsoleLogExample.debug.xcconfig"; sourceTree = "<group>"; };
 		977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A69100C695601E9AFAE628EF /* Pods_JLConsoleLogExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLConsoleLogExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66ED2457E34100E5D141 /* JLConsoleLogExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLConsoleLogExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD66F02457E34100E5D141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCAD66F22457E34100E5D141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				977C26E21F635845D730937A /* Pods_JLConsoleLogExample.framework */,
-				A69100C695601E9AFAE628EF /* Pods_JLConsoleLogExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
