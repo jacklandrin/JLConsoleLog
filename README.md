@@ -91,3 +91,6 @@ The git address is <https://github.com/jacklandrin/JLConsoleLog>
 
 ## Reference
 [PerformanceMonitor](https://github.com/woshiccm/PerformanceMonitor)
+
+## License
+MIT
