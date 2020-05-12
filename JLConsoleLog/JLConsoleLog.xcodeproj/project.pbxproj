@@ -12,11 +12,8 @@
 		CC4CCFB62464368700E49829 /* CardiogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB52464368700E49829 /* CardiogramView.swift */; };
 		CC4CCFB82464391600E49829 /* JLPanNavigationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB72464391600E49829 /* JLPanNavigationGestureRecognizer.swift */; };
 		CC4CCFBA24643F2600E49829 /* JLMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CCFB924643F2600E49829 /* JLMonitorViewController.swift */; };
-		CC4F51F7246AC2EE00AC2A53 /* JLConsoleLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67382457E3CA00E5D141 /* JLConsoleLogTests.swift */; };
 		CCA629122462AAF3004D8A57 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629112462AAF3004D8A57 /* MemoryMonitor.swift */; };
 		CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA629132462ABF1004D8A57 /* PerformanceMonitor.swift */; };
-		CCAD67342457E3CA00E5D141 /* JLConsoleLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */; };
-		CCAD67392457E3CA00E5D141 /* JLConsoleLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67382457E3CA00E5D141 /* JLConsoleLogTests.swift */; };
 		CCAD673B2457E3CA00E5D141 /* JLConsoleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCAD67502457E40A00E5D141 /* JLConsoleLogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67442457E40900E5D141 /* JLConsoleLogDetailViewController.swift */; };
 		CCAD67512457E40A00E5D141 /* JLConsoleFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD67452457E40A00E5D141 /* JLConsoleFilterViewController.swift */; };
@@ -33,16 +30,6 @@
 		CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD675E245809C500E5D141 /* JLBubbleViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CCAD67352457E3CA00E5D141 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCAD67212457E3CA00E5D141 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCAD67292457E3CA00E5D141;
-			remoteInfo = JLConsoleLog;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		CC40F8F02460724900CC258A /* CPUMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
 		CC424F832467FA4D0026058B /* FPSMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSMonitor.swift; sourceTree = "<group>"; };
@@ -54,9 +41,6 @@
 		CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JLConsoleLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD672D2457E3CA00E5D141 /* JLConsoleLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLConsoleLog.h; sourceTree = "<group>"; };
 		CCAD672E2457E3CA00E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCAD67332457E3CA00E5D141 /* JLConsoleLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLConsoleLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCAD67382457E3CA00E5D141 /* JLConsoleLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLConsoleLogTests.swift; sourceTree = "<group>"; };
-		CCAD673A2457E3CA00E5D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCAD67442457E40900E5D141 /* JLConsoleLogDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLConsoleLogDetailViewController.swift; sourceTree = "<group>"; };
 		CCAD67452457E40A00E5D141 /* JLConsoleFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLConsoleFilterViewController.swift; sourceTree = "<group>"; };
 		CCAD67462457E40A00E5D141 /* JLConsoleCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLConsoleCanvasView.swift; sourceTree = "<group>"; };
@@ -77,14 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD67302457E3CA00E5D141 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD67342457E3CA00E5D141 /* JLConsoleLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				CCAD672C2457E3CA00E5D141 /* JLConsoleLog */,
-				CCAD67372457E3CA00E5D141 /* JLConsoleLogTests */,
 				CCAD672B2457E3CA00E5D141 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */,
-				CCAD67332457E3CA00E5D141 /* JLConsoleLogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,15 +134,6 @@
 				CCAD672E2457E3CA00E5D141 /* Info.plist */,
 			);
 			path = JLConsoleLog;
-			sourceTree = "<group>";
-		};
-		CCAD67372457E3CA00E5D141 /* JLConsoleLogTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCAD67382457E3CA00E5D141 /* JLConsoleLogTests.swift */,
-				CCAD673A2457E3CA00E5D141 /* Info.plist */,
-			);
-			path = JLConsoleLogTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,24 +168,6 @@
 			productReference = CCAD672A2457E3CA00E5D141 /* JLConsoleLog.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CCAD67322457E3CA00E5D141 /* JLConsoleLogTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCAD67412457E3CA00E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogTests" */;
-			buildPhases = (
-				CCAD672F2457E3CA00E5D141 /* Sources */,
-				CCAD67302457E3CA00E5D141 /* Frameworks */,
-				CCAD67312457E3CA00E5D141 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCAD67362457E3CA00E5D141 /* PBXTargetDependency */,
-			);
-			name = JLConsoleLogTests;
-			productName = JLConsoleLogTests;
-			productReference = CCAD67332457E3CA00E5D141 /* JLConsoleLogTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,9 +181,6 @@
 					CCAD67292457E3CA00E5D141 = {
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
-					};
-					CCAD67322457E3CA00E5D141 = {
-						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -254,20 +198,12 @@
 			projectRoot = "";
 			targets = (
 				CCAD67292457E3CA00E5D141 /* JLConsoleLog */,
-				CCAD67322457E3CA00E5D141 /* JLConsoleLogTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CCAD67282457E3CA00E5D141 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD67312457E3CA00E5D141 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,7 +232,6 @@
 				CCAD675F245809C500E5D141 /* JLBubbleViewController.swift in Sources */,
 				CCAD67502457E40A00E5D141 /* JLConsoleLogDetailViewController.swift in Sources */,
 				CCAD675B2457E40A00E5D141 /* JLConsoleFloatingViewController.swift in Sources */,
-				CC4F51F7246AC2EE00AC2A53 /* JLConsoleLogTests.swift in Sources */,
 				CCAD67572457E40A00E5D141 /* JLConsoleLogModel.swift in Sources */,
 				CCA629142462ABF1004D8A57 /* PerformanceMonitor.swift in Sources */,
 				CCAD67522457E40A00E5D141 /* JLConsoleCanvasView.swift in Sources */,
@@ -305,23 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCAD672F2457E3CA00E5D141 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD67392457E3CA00E5D141 /* JLConsoleLogTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CCAD67362457E3CA00E5D141 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CCAD67292457E3CA00E5D141 /* JLConsoleLog */;
-			targetProxy = CCAD67352457E3CA00E5D141 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CCAD673C2457E3CA00E5D141 /* Debug */ = {
@@ -499,44 +418,6 @@
 			};
 			name = Release;
 		};
-		CCAD67422457E3CA00E5D141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B22726TNGH;
-				INFOPLIST_FILE = JLConsoleLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CCAD67432457E3CA00E5D141 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B22726TNGH;
-				INFOPLIST_FILE = JLConsoleLogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jack.JLConsoleLogTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,15 +435,6 @@
 			buildConfigurations = (
 				CCAD673F2457E3CA00E5D141 /* Debug */,
 				CCAD67402457E3CA00E5D141 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCAD67412457E3CA00E5D141 /* Build configuration list for PBXNativeTarget "JLConsoleLogTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCAD67422457E3CA00E5D141 /* Debug */,
-				CCAD67432457E3CA00E5D141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

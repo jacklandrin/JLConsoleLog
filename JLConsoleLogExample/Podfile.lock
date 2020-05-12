@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - JLConsoleLog (1.0.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - JLConsoleLog (from `../`)
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   JLConsoleLog:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   JLConsoleLog: e866f8adaea644797cec075be4bdfd3bd0f79ee2
 
-PODFILE CHECKSUM: 6451422c2a6f31cb919517452e2281a3523c310b
+PODFILE CHECKSUM: 4a3cf3c5f8b8c366152b232395703253d9c3b5aa
 
 COCOAPODS: 1.9.1
