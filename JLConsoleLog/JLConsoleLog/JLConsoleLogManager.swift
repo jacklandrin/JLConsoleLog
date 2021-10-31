@@ -90,7 +90,6 @@ public class JLConsoleLogManager: NSObject {
             }
             
             strongSelf.allLogArray.append(log)
-            strongSelf.notifyLogArrayChange()
             
             if strongSelf.logMatchesCurrentFilter(log: log) {
                 strongSelf.batchInsertFilteredLog(log: log)
@@ -141,17 +140,18 @@ public class JLConsoleLogManager: NSObject {
     }
     
     private func batchInsertFilteredLog(log:JLConsoleLogModel) {
-        if pendingFilteredLogArray.count > 0 {
-            self.perform(#selector(insertPendingFilteredLogItems), with: nil, afterDelay: 0.3, inModes: [RunLoop.Mode.common])
-        }
+        
+        self.perform(#selector(insertPendingFilteredLogItems), with: nil, afterDelay: 0.3, inModes: [RunLoop.Mode.common])
         
         pendingFilteredLogArray.append(log)
+        
     }
     
     @objc private func insertPendingFilteredLogItems() {
         let matchedLogs = pendingFilteredLogArray.filter{ logMatchesCurrentFilter(log: $0) }
         filteredLogArray.append(contentsOf: matchedLogs)
         pendingFilteredLogArray.removeAll()
+        self.notifyLogArrayChange()
     }
     
     
