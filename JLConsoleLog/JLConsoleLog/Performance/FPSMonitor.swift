@@ -9,7 +9,7 @@
 import UIKit
 import QuartzCore
 
-@objc public protocol FPSMonitorDelegate: class {
+@objc public protocol FPSMonitorDelegate: AnyObject {
     
     func fpsMonitor(with monitor: FPSMonitor, fps: Double)
 }
