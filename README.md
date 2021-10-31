@@ -1,5 +1,5 @@
 # JLConsoleLog
-![](https://img.shields.io/badge/pod-1.0.4-blue) ![](https://img.shields.io/badge/platform-iOS-lightgrey) ![](https://img.shields.io/badge/license-MIT-brightgreen)
+![](https://img.shields.io/badge/pod-1.0.7-blue) ![](https://img.shields.io/badge/platform-iOS-lightgrey) ![](https://img.shields.io/badge/license-MIT-brightgreen)
 ## What is JLConsoleLog?
 **JLConsoleLog** is an awesome tool In-App to help swift developer log information in both development and production environment. You won't miss any key and useful logs about the bugs in non-debug mode. You also can integrate it in your project's backdoor toolkit, it will help you solve vital issues.
 
