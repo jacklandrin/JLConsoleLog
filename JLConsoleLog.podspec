@@ -1,13 +1,13 @@
 
 Pod::Spec.new do |s|
   s.name         = 'JLConsoleLog'
-  s.version      = '1.0.4'
+  s.version      = '1.0.6'
   s.authors      = {'jacklandrin' => 'jacklandrin@hotmail.com'}
   s.homepage     = 'http://www.jacklandrin.com'
   s.summary      = 'A convenient In-App floating log console with Swift for iOS'
   s.license      = 'MIT'
   s.source = { 
-    :git => 'https://github.com/jacklandrin/JLConsoleLog',
+    :git => 'https://github.com/jacklandrin/JLConsoleLog.git',
     :tag => s.version
   }
   s.frameworks   = 'Foundation', 'UIKit'
